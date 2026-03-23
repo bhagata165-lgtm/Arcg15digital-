@@ -2,255 +2,326 @@
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ram Navami Digital Hub – Ambikapur, Sarguja | ARC G15 Digital</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Ram Navami 2026 – Digital Hub | ARC G15 Digital, Ambikapur</title>
+<meta name="description" content="Ram Navami 2026 – Ambikapur, Sarguja. Free poster generator, wishes cards, local offers. ARC G15 Digital.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
 <style>
+/* ═══════════════ TOKENS ═══════════════ */
 :root{
-  --g:#C9A84C;--gl:#F0D080;--gp:#FDE99A;
-  --s:#FF6B00;--sl:#FF9234;
-  --dk:#07020F;--dk2:#0E0519;
-  --cr:#FDF6E3;--dm:rgba(240,208,128,.5);
-  --bd:rgba(201,168,76,.2);--cd:rgba(255,255,255,.03);
+  --g:#C9A84C; --gl:#F0D080; --gp:#FDE99A; --gd:#8B6914;
+  --s:#FF6B00; --sl:#FF9234;
+  --dk:#08070F; --dk2:#0F0D1A; --dk3:#130800;
+  --cr:#FDF8F0; --dm:rgba(240,208,128,.5); --dd:rgba(240,208,128,.25);
+  --bd:rgba(201,168,76,.16); --bds:rgba(201,168,76,.32);
+  --card:rgba(255,255,255,.035); --card2:rgba(255,255,255,.055);
+  --r8:8px; --r12:12px; --r16:16px; --r20:20px;
+  --shadow:0 2px 20px rgba(0,0,0,.4);
+  --glow:0 0 40px rgba(201,168,76,.12);
 }
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{background:var(--dk);color:var(--cr);font-family:'Poppins',sans-serif;overflow-x:hidden}
-::-webkit-scrollbar{width:3px}::-webkit-scrollbar-thumb{background:#8B6914}
-input,textarea,select,button{font-family:'Poppins',sans-serif}
+/* ═══════════════ RESET ═══════════════ */
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{background:var(--dk);color:var(--cr);font-family:'Inter',sans-serif;overflow-x:hidden;font-size:15px;line-height:1.6}
+input,textarea,select,button{font-family:'Inter',sans-serif}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-thumb{background:var(--gd);border-radius:4px}
+img{max-width:100%}
+a{text-decoration:none;color:inherit}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:11px 4vw;display:flex;align-items:center;justify-content:space-between;background:rgba(7,2,15,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd)}
-.logo{font-family:'Cinzel Decorative',serif;font-size:clamp(10px,3vw,13px);color:var(--gl);letter-spacing:2px;text-decoration:none;white-space:nowrap}
+/* ═══════════════ NAV ═══════════════ */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:900;
+  padding:12px 20px;display:flex;align-items:center;justify-content:space-between;
+  background:rgba(8,7,15,.85);backdrop-filter:blur(24px) saturate(180%);
+  -webkit-backdrop-filter:blur(24px) saturate(180%);
+  border-bottom:1px solid var(--bd);
+}
+.logo{font-family:'Cinzel Decorative',serif;font-size:13px;color:var(--gl);letter-spacing:2px}
 .logo span{color:var(--s)}
-.nav-links{display:flex;gap:18px;list-style:none}
-.nav-links a{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--dm);text-decoration:none;transition:color .2s}
+.nav-r{display:flex;align-items:center;gap:8px}
+.nav-links{display:flex;gap:20px;list-style:none}
+.nav-links a{font-size:11px;letter-spacing:1px;text-transform:uppercase;font-weight:500;color:var(--dm);transition:color .2s}
 .nav-links a:hover{color:var(--gl)}
-@media(max-width:600px){.nav-links{display:none}}
-.nbtn{background:linear-gradient(135deg,var(--s),var(--sl));color:#fff;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:none;border-radius:3px;padding:9px 16px;cursor:pointer;white-space:nowrap;transition:transform .2s}
-.nbtn:hover{transform:translateY(-1px)}
+@media(max-width:640px){.nav-links{display:none}}
+.pill-btn{background:var(--s);color:#fff;font-size:12px;font-weight:700;letter-spacing:.5px;border:none;border-radius:50px;padding:9px 20px;cursor:pointer;transition:all .2s;white-space:nowrap}
+.pill-btn:hover{background:var(--sl);transform:scale(1.03)}
+.pill-btn:active{transform:scale(.98)}
 
-#hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;padding:110px 5vw 70px;overflow:hidden;text-align:center}
-.hbg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0}
-.hbg-ov{position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse 70% 55% at 50% 40%,rgba(201,168,76,.09),transparent 70%),linear-gradient(180deg,rgba(7,2,15,.7) 0%,rgba(7,2,15,.35) 50%,rgba(7,2,15,.75) 100%)}
-.hmand{position:absolute;width:min(700px,110vw);height:min(700px,110vw);top:50%;left:50%;transform:translate(-50%,-50%);opacity:.05;animation:spin 120s linear infinite;pointer-events:none;z-index:1}
-@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
-.hcon{position:relative;z-index:2;max-width:760px;margin:0 auto}
-.heye{display:inline-flex;align-items:center;gap:10px;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--sl);margin-bottom:16px;opacity:0;animation:fu .8s .2s both}
-.heye::before,.heye::after{content:'';width:24px;height:1px;background:var(--sl)}
-.hom{font-size:clamp(28px,5vw,46px);color:var(--g);display:block;margin-bottom:8px;animation:gp 2.5s ease-in-out infinite,fu .8s .3s both}
-@keyframes gp{0%,100%{text-shadow:0 0 15px rgba(201,168,76,.5),0 0 30px rgba(201,168,76,.2)}50%{text-shadow:0 0 40px rgba(201,168,76,1),0 0 70px rgba(255,200,50,.4)}}
-.htit{font-family:'Cinzel Decorative',serif;font-size:clamp(18px,4.5vw,46px);font-weight:700;line-height:1.2;color:var(--gp);margin-bottom:5px;opacity:0;animation:fu .9s .4s both}
-.htit .s{color:var(--sl)}
-.hhin{font-family:'Tiro Devanagari Hindi',serif;font-size:clamp(16px,3.5vw,28px);color:var(--gl);margin-bottom:10px;opacity:0;animation:fu .9s .55s both}
-.hsub{font-size:clamp(12px,2vw,15px);color:var(--dm);font-weight:300;max-width:460px;margin:0 auto 28px;line-height:1.7;opacity:0;animation:fu .9s .7s both}
-.hbtns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;opacity:0;animation:fu .9s .85s both}
-.hup{opacity:0;animation:fu .9s 1s both;margin-top:20px;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
-.hup-btn{display:inline-flex;align-items:center;gap:7px;background:rgba(201,168,76,.07);border:1.5px dashed rgba(201,168,76,.3);color:var(--dm);font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:9px 16px;border-radius:3px;cursor:pointer;transition:all .2s;border-style:dashed}
-.hup-btn:hover{background:rgba(201,168,76,.15);color:var(--gl)}
-.hup-clr{background:transparent;border:1px solid rgba(255,80,80,.25);color:rgba(255,120,120,.5);font-size:9px;letter-spacing:1px;padding:9px 12px;border-radius:3px;cursor:pointer;text-transform:uppercase;transition:all .2s}
-.hup-clr:hover{color:rgba(255,120,120,.9)}
-@keyframes fu{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+/* ═══════════════ SECTIONS ═══════════════ */
+section{position:relative;padding:80px 20px;z-index:1}
+@media(min-width:768px){section{padding:100px 5vw}}
+.section-tag{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--sl);background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.25);padding:5px 14px;border-radius:50px;margin-bottom:16px}
+.section-title{font-family:'Cinzel',serif;font-size:clamp(22px,4vw,36px);color:var(--gp);font-weight:700;line-height:1.15;margin-bottom:10px;letter-spacing:-.3px}
+.section-sub{font-size:14px;color:var(--dm);font-weight:400;max-width:480px;line-height:1.7}
+.sep{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--g),var(--s),var(--g),transparent);opacity:.25}
 
-.bp{background:linear-gradient(135deg,var(--s),var(--sl));color:#fff;font-size:13px;font-weight:600;letter-spacing:.8px;border:none;border-radius:4px;padding:13px 28px;cursor:pointer;box-shadow:0 4px 22px rgba(255,107,0,.4);transition:transform .2s,box-shadow .2s;text-decoration:none;display:inline-block}
-.bp:hover{transform:translateY(-2px)}
-.bs{background:transparent;color:var(--gl);font-size:13px;font-weight:500;letter-spacing:.8px;border:1px solid var(--g);border-radius:4px;padding:13px 28px;cursor:pointer;transition:background .2s;text-decoration:none;display:inline-block}
-.bs:hover{background:rgba(201,168,76,.1)}
-
-section{position:relative;padding:76px 4vw;z-index:1}
-.stag{display:inline-block;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--sl);border:1px solid rgba(255,107,0,.28);padding:4px 12px;border-radius:2px;margin-bottom:13px}
-.stit{font-family:'Cinzel',serif;font-size:clamp(19px,3.5vw,33px);color:var(--gp);font-weight:700;line-height:1.2;margin-bottom:7px}
-.ssub{font-size:13px;color:var(--dm);font-weight:300;max-width:480px;line-height:1.7}
-.sep{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--g),var(--s),var(--g),transparent);opacity:.3}
-.rv{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
+/* ═══════════════ REVEAL ═══════════════ */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .65s cubic-bezier(.16,1,.3,1),transform .65s cubic-bezier(.16,1,.3,1)}
 .rv.on{opacity:1;transform:none}
-.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
 
-#gen{background:linear-gradient(180deg,var(--dk) 0%,#0E0519 100%);border-top:1px solid var(--bd)}
-.gg{display:grid;grid-template-columns:1fr 1.05fr;gap:42px;align-items:start}
-@media(max-width:768px){.gg{grid-template-columns:1fr;gap:24px}}
-.fields{display:flex;flex-direction:column;gap:13px}
-.fg{display:flex;flex-direction:column;gap:5px}
-.fg label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--dm);font-weight:500}
-.fg input,.fg textarea,.fg select{background:rgba(255,255,255,.04);border:1px solid var(--bd);border-radius:4px;color:var(--cr);font-size:13px;padding:11px 13px;outline:none;width:100%;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none}
-.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--g);box-shadow:0 0 10px rgba(201,168,76,.12)}
-.fg input::placeholder,.fg textarea::placeholder{color:rgba(240,208,128,.18)}
-.fg textarea{resize:vertical;min-height:66px}
-.fg select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23C9A84C' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:32px}
-.fg select option{background:#0E0519;color:var(--cr)}
+@keyframes fu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes gp{0%,100%{text-shadow:0 0 16px rgba(201,168,76,.5)}50%{text-shadow:0 0 48px rgba(201,168,76,1),0 0 80px rgba(255,200,50,.35)}}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes shimmer{to{background-position:200% center}}
 
-.apills{display:flex;gap:5px;flex-wrap:wrap;margin-top:4px}
-.ap{background:rgba(201,168,76,.07);border:1px solid rgba(201,168,76,.22);border-radius:20px;color:var(--dm);font-size:10px;letter-spacing:.5px;padding:4px 11px;cursor:pointer;transition:all .2s;white-space:nowrap}
-.ap:hover,.ap.on{background:rgba(201,168,76,.22);color:var(--gp);border-color:var(--g)}
-.ftabs{display:flex;gap:5px;flex-wrap:wrap}
-.ft{background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.18);border-radius:20px;color:var(--dm);font-size:10px;padding:5px 13px;cursor:pointer;transition:all .2s}
-.ft:hover,.ft.on{background:rgba(201,168,76,.22);color:var(--gp);border-color:var(--g)}
+/* ═══════════════ HERO ═══════════════ */
+#hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:100px 20px 60px;overflow:hidden;text-align:center;position:relative}
+.hbg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0}
+.hbg-ov{position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(201,168,76,.08),transparent 70%),linear-gradient(180deg,rgba(8,7,15,.65) 0%,rgba(8,7,15,.3) 50%,rgba(8,7,15,.8) 100%)}
+.hmandala{position:absolute;width:min(720px,115vw);height:min(720px,115vw);top:50%;left:50%;transform:translate(-50%,-50%);opacity:.04;animation:spin 140s linear infinite;pointer-events:none;z-index:1}
+.hero-c{position:relative;z-index:2;max-width:720px;width:100%}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--sl);margin-bottom:20px;opacity:0;animation:fu .7s .15s both}
+.hero-tag::before,.hero-tag::after{content:'';width:20px;height:1px;background:var(--sl)}
+.hero-om{font-size:clamp(32px,7vw,52px);color:var(--g);display:block;margin-bottom:12px;animation:gp 3s ease-in-out infinite,fu .8s .25s both;line-height:1}
+.hero-title{font-family:'Cinzel Decorative',serif;font-size:clamp(20px,5.5vw,50px);font-weight:700;color:var(--gp);line-height:1.15;margin-bottom:8px;opacity:0;animation:fu .9s .35s both}
+.hero-title .s{color:var(--sl)}
+.hero-hindi{font-family:'Tiro Devanagari Hindi',serif;font-size:clamp(18px,4.5vw,32px);color:var(--gl);margin-bottom:8px;opacity:0;animation:fu .9s .45s both;line-height:1.3}
+.hero-year{font-family:'Cinzel',serif;font-size:clamp(13px,2.5vw,18px);color:var(--g);letter-spacing:6px;border:1px solid rgba(201,168,76,.3);display:inline-block;padding:5px 20px;border-radius:50px;margin-bottom:16px;opacity:0;animation:fu .9s .52s both}
+.hero-sub{font-size:clamp(13px,2vw,15px);color:var(--dm);font-weight:400;max-width:440px;margin:0 auto 32px;line-height:1.7;opacity:0;animation:fu .9s .6s both}
+.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;opacity:0;animation:fu .9s .7s both}
+.hero-upload{opacity:0;animation:fu .9s .85s both;margin-top:24px;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}
+.upload-ghost{display:inline-flex;align-items:center;gap:6px;background:rgba(201,168,76,.07);border:1.5px dashed rgba(201,168,76,.3);color:var(--dm);font-size:11px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;padding:9px 18px;border-radius:50px;cursor:pointer;transition:all .2s}
+.upload-ghost:hover{background:rgba(201,168,76,.14);color:var(--gl);border-color:rgba(201,168,76,.5)}
+.ghost-clear{background:transparent;border:1px solid rgba(255,80,80,.22);color:rgba(255,120,120,.45);font-size:10px;letter-spacing:1px;padding:9px 14px;border-radius:50px;cursor:pointer;transition:all .2s;text-transform:uppercase}
+.ghost-clear:hover{color:rgba(255,120,120,.85);border-color:rgba(255,80,80,.45)}
 
-/* ── SYMBOL PICKER – canvas drawn icons ── */
+/* ═══════════════ BUTTONS ═══════════════ */
+.btn-primary{background:var(--s);color:#fff;font-size:14px;font-weight:700;letter-spacing:.3px;border:none;border-radius:50px;padding:14px 32px;cursor:pointer;box-shadow:0 4px 24px rgba(255,107,0,.35);transition:all .2s;display:inline-block;text-decoration:none}
+.btn-primary:hover{background:var(--sl);transform:scale(1.03);box-shadow:0 8px 32px rgba(255,107,0,.5)}
+.btn-primary:active{transform:scale(.97)}
+.btn-ghost{background:transparent;color:var(--gl);font-size:14px;font-weight:600;letter-spacing:.3px;border:1.5px solid rgba(201,168,76,.4);border-radius:50px;padding:13px 32px;cursor:pointer;transition:all .2s;display:inline-block}
+.btn-ghost:hover{background:rgba(201,168,76,.1);border-color:var(--g)}
+.gold-btn{background:linear-gradient(135deg,var(--gd),var(--g),var(--gl),var(--g),var(--gd));background-size:200% auto;color:#0d0004;font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;border:none;border-radius:50px;padding:14px;cursor:pointer;animation:shimmer 3s linear infinite;transition:transform .2s;width:100%}
+.gold-btn:hover{transform:translateY(-2px)}
+.gold-btn:active{transform:translateY(0)}
+
+/* ═══════════════ GENERATOR ═══════════════ */
+#gen{background:linear-gradient(180deg,var(--dk) 0%,var(--dk2) 100%);border-top:1px solid var(--bd)}
+.gen-layout{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:start;max-width:1100px;margin:0 auto}
+@media(max-width:768px){.gen-layout{grid-template-columns:1fr;gap:32px}}
+.form-stack{display:flex;flex-direction:column;gap:16px}
+
+/* Form fields */
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--dm)}
+.field input,.field textarea,.field select{
+  background:rgba(255,255,255,.05);border:1px solid var(--bd);border-radius:var(--r12);
+  color:var(--cr);font-size:14px;padding:13px 16px;outline:none;width:100%;
+  transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;
+}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--g);box-shadow:0 0 0 3px rgba(201,168,76,.1)}
+.field input::placeholder,.field textarea::placeholder{color:var(--dd)}
+.field textarea{resize:vertical;min-height:72px;line-height:1.5}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23C9A84C' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+.field select option{background:#0F0D1A;color:var(--cr)}
+
+/* Pills */
+.pills{display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
+.pill{background:rgba(201,168,76,.07);border:1px solid rgba(201,168,76,.18);border-radius:50px;color:var(--dm);font-size:11px;font-weight:500;padding:5px 13px;cursor:pointer;transition:all .2s;white-space:nowrap}
+.pill:hover,.pill.on{background:rgba(201,168,76,.2);color:var(--gp);border-color:var(--g)}
+.pill:active{transform:scale(.95)}
+
+/* Festival tabs */
+.ftabs{display:flex;gap:6px;flex-wrap:wrap}
+.ftab{background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.16);border-radius:50px;color:var(--dm);font-size:11px;font-weight:500;padding:6px 14px;cursor:pointer;transition:all .2s}
+.ftab:hover,.ftab.on{background:rgba(201,168,76,.2);color:var(--gp);border-color:var(--g)}
+
+/* Symbol grid */
 .sym-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
-.sym-btn{background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.18);border-radius:8px;padding:8px 4px;cursor:pointer;transition:all .2s;display:flex;flex-direction:column;align-items:center;gap:4px}
-.sym-btn canvas{display:block;pointer-events:none}
-.sym-btn span{font-size:9px;color:var(--dm);letter-spacing:.5px}
-.sym-btn:hover{background:rgba(201,168,76,.14);transform:translateY(-2px)}
-.sym-btn.on{border-color:var(--g);background:rgba(201,168,76,.2);box-shadow:0 0 10px rgba(201,168,76,.3)}
+@media(max-width:380px){.sym-grid{grid-template-columns:repeat(4,1fr)}}
+.sym-btn{background:rgba(255,255,255,.04);border:1.5px solid rgba(201,168,76,.16);border-radius:var(--r12);padding:10px 4px 8px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:5px;transition:all .25s}
+.sym-btn canvas{display:block;pointer-events:none;border-radius:4px}
+.sym-btn span{font-size:9px;font-weight:600;color:var(--dm);letter-spacing:.3px;text-align:center;line-height:1.2}
+.sym-btn:hover{background:rgba(201,168,76,.1);transform:translateY(-2px);border-color:rgba(201,168,76,.35)}
+.sym-btn:active{transform:scale(.95)}
+.sym-btn.on{border-color:var(--g);background:rgba(201,168,76,.15);box-shadow:0 0 12px rgba(201,168,76,.2)}
 .sym-btn.on span{color:var(--gp)}
 
-/* ── THEME BUTTONS ── */
-.th-grid{display:flex;gap:8px;flex-wrap:wrap}
-.th-btn{width:44px;height:44px;border-radius:8px;border:2px solid transparent;cursor:pointer;transition:all .25s;position:relative;overflow:hidden}
-.th-btn:hover{transform:scale(1.1)}
-.th-btn.on{border-color:var(--gp)!important;box-shadow:0 0 14px rgba(201,168,76,.5)}
-.th-btn::after{content:attr(data-label);position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.5);color:rgba(255,255,255,.7);font-size:7px;text-align:center;padding:1px 0;opacity:0;transition:opacity .2s}
-.th-btn:hover::after{opacity:1}
+/* Theme grid */
+.theme-grid{display:flex;gap:8px;flex-wrap:wrap}
+.theme-btn{width:44px;height:44px;border-radius:var(--r12);border:2px solid transparent;cursor:pointer;transition:all .25s;position:relative;overflow:hidden}
+.theme-btn:hover{transform:scale(1.1)}
+.theme-btn:active{transform:scale(.92)}
+.theme-btn.on{border-color:var(--gp)!important;box-shadow:0 0 0 3px rgba(201,168,76,.25)}
+.theme-btn canvas{display:block;width:100%;height:100%}
 
-.uprow{display:flex;gap:7px}
-.upbtn{flex:1;background:rgba(201,168,76,.06);border:1.5px dashed rgba(201,168,76,.28);border-radius:4px;color:var(--dm);font-size:11px;letter-spacing:1px;text-transform:uppercase;padding:10px 12px;text-align:center;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:6px}
-.upbtn:hover{background:rgba(201,168,76,.14);color:var(--gl)}
-.clrbtn{background:rgba(255,60,60,.07);border:1px solid rgba(255,60,60,.18);border-radius:4px;color:rgba(255,120,120,.55);font-size:10px;text-transform:uppercase;padding:8px 12px;cursor:pointer;transition:all .2s;white-space:nowrap}
-.clrbtn:hover{background:rgba(255,60,60,.14);color:rgba(255,120,120,.9)}
-.gbtn{width:100%;background:linear-gradient(135deg,#8B6914,#C9A84C,#F0D080,#C9A84C,#8B6914);background-size:200% auto;color:#0d0004;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;border:none;border-radius:4px;padding:14px;cursor:pointer;animation:gsh 3s linear infinite;transition:transform .2s;margin-top:4px}
-.gbtn:hover{transform:translateY(-2px)}
-@keyframes gsh{to{background-position:200% center}}
+/* Upload row */
+.uprow{display:flex;gap:8px}
+.up-ghost{flex:1;background:rgba(255,255,255,.04);border:1.5px dashed rgba(201,168,76,.25);border-radius:var(--r12);color:var(--dm);font-size:12px;font-weight:500;letter-spacing:.5px;text-transform:uppercase;padding:12px;text-align:center;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:6px}
+.up-ghost:hover{background:rgba(201,168,76,.1);color:var(--gl);border-color:rgba(201,168,76,.4)}
+.clr-ghost{background:rgba(255,60,60,.06);border:1px solid rgba(255,60,60,.16);border-radius:var(--r12);color:rgba(255,110,110,.5);font-size:11px;font-weight:600;padding:10px 14px;cursor:pointer;transition:all .2s;white-space:nowrap;text-transform:uppercase}
+.clr-ghost:hover{background:rgba(255,60,60,.12);color:rgba(255,110,110,.85)}
 
-.cvside{position:sticky;top:82px;display:flex;flex-direction:column;align-items:center;gap:9px}
-.cvwrap{width:100%;max-width:340px}
-#poster{width:100%;border-radius:8px;box-shadow:0 0 50px rgba(201,168,76,.22),0 16px 48px rgba(0,0,0,.6);display:block;cursor:pointer}
-.cvhint{font-size:10px;color:var(--dm);letter-spacing:1.5px;text-align:center;text-transform:uppercase}
-.dlrow{display:flex;gap:7px;width:100%;max-width:340px}
-.dlbtn{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:rgba(37,211,102,.09);border:1px solid rgba(37,211,102,.28);color:#25D366;font-size:11px;font-weight:600;padding:11px;border-radius:4px;cursor:pointer;transition:all .2s}
-.dlbtn:hover{background:rgba(37,211,102,.18)}
-.wabtn2{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:rgba(37,211,102,.82);border:none;color:#fff;font-size:11px;font-weight:700;padding:11px;border-radius:4px;cursor:pointer;transition:all .2s}
-.wabtn2:hover{background:#25D366;transform:translateY(-1px)}
-.wamsg{width:100%;max-width:340px;background:rgba(37,211,102,.05);border:1px solid rgba(37,211,102,.18);border-radius:6px;padding:13px;position:relative;margin-top:2px}
-.wamsg::before{content:'AUTO WA MESSAGE';position:absolute;top:-8px;left:12px;font-size:8px;letter-spacing:2.5px;color:var(--dm);background:var(--dk2);padding:0 6px}
-.wamsg-txt{font-size:11px;color:rgba(255,255,255,.7);line-height:1.7;white-space:pre-wrap;max-height:130px;overflow-y:auto}
-.copybtn{width:100%;max-width:340px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);color:var(--dm);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:9px;border-radius:4px;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:6px}
-.copybtn:hover{background:rgba(201,168,76,.16);color:var(--gl)}
-.sizetabs{display:flex;gap:5px;flex-wrap:wrap}
-.stb{background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.18);border-radius:4px;color:var(--dm);font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:5px 10px;cursor:pointer;transition:all .2s}
-.stb.on{background:rgba(201,168,76,.2);color:var(--gp);border-color:var(--g)}
+/* Size tabs */
+.sizetabs{display:flex;gap:6px}
+.stab{background:rgba(255,255,255,.04);border:1px solid var(--bd);border-radius:50px;color:var(--dm);font-size:11px;font-weight:500;padding:7px 14px;cursor:pointer;transition:all .2s;flex:1;text-align:center}
+.stab.on{background:rgba(201,168,76,.18);color:var(--gp);border-color:var(--g)}
 
-#listings{background:linear-gradient(180deg,#0E0519 0%,var(--dk) 100%)}
-.lgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:18px}
-.sc{background:var(--cd);border:1px solid var(--bd);border-radius:8px;padding:19px;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s}
-.sc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--s),var(--g));opacity:0;transition:opacity .3s}
-.sc:hover{transform:translateY(-3px);box-shadow:0 10px 34px rgba(201,168,76,.1);border-color:rgba(201,168,76,.36)}
-.sc:hover::before{opacity:1}
-.sbadge{display:inline-block;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--sl);border:1px solid rgba(255,107,0,.26);padding:3px 8px;border-radius:2px;margin-bottom:8px}
-.sname{font-family:'Cinzel',serif;font-size:14px;font-weight:700;color:var(--gp);margin-bottom:5px}
-.soffer{font-size:13px;color:var(--cr);line-height:1.5;margin-bottom:8px}
-.sloc{font-size:11px;color:var(--dm);margin-bottom:12px}
-.wabtn{display:flex;align-items:center;gap:6px;background:rgba(37,211,102,.08);border:1px solid rgba(37,211,102,.3);color:#25D366;border-radius:4px;padding:9px 13px;font-size:12px;font-weight:600;cursor:pointer;width:100%;transition:background .2s;text-decoration:none}
-.wabtn:hover{background:rgba(37,211,102,.18)}
+/* Canvas side */
+.cv-side{position:sticky;top:80px;display:flex;flex-direction:column;align-items:center;gap:12px}
+.cv-wrap{width:100%;max-width:360px}
+#poster{width:100%;border-radius:var(--r16);box-shadow:0 0 60px rgba(201,168,76,.18),0 24px 60px rgba(0,0,0,.5);display:block;cursor:pointer;transition:transform .3s}
+#poster:hover{transform:scale(1.01)}
+.cv-hint{font-size:10px;font-weight:600;color:var(--dm);letter-spacing:2px;text-align:center;text-transform:uppercase}
+.dl-row{display:flex;gap:8px;width:100%;max-width:360px}
+.dl-ghost{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.7);font-size:12px;font-weight:600;padding:12px;border-radius:var(--r12);cursor:pointer;transition:all .2s}
+.dl-ghost:hover{background:rgba(255,255,255,.09);color:#fff}
+.wa-solid{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:#25D366;color:#fff;font-size:12px;font-weight:700;padding:12px;border-radius:var(--r12);cursor:pointer;border:none;transition:all .2s}
+.wa-solid:hover{background:#1da851;transform:scale(1.02)}
 
-#wviral{background:linear-gradient(135deg,#001500 0%,#0E0519 50%,#150A00 100%);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);text-align:center}
-.wvin{max-width:600px;margin:0 auto}
-.wvi{font-size:54px;display:block;margin-bottom:14px;animation:bnc 2s ease-in-out infinite}
-@keyframes bnc{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
-.wvbox{background:rgba(37,211,102,.05);border:1px solid rgba(37,211,102,.2);border-radius:8px;padding:16px 18px;text-align:left;margin:22px 0 18px;font-size:13px;color:rgba(255,255,255,.75);line-height:1.8;position:relative}
-.wvbox::before{content:'VIRAL MESSAGE PREVIEW';position:absolute;top:-8px;left:12px;font-size:8px;letter-spacing:2.5px;color:var(--dm);background:#001500;padding:0 6px}
-.wvshare{display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-size:13px;font-weight:700;text-transform:uppercase;border:none;border-radius:4px;padding:14px 30px;cursor:pointer;box-shadow:0 4px 24px rgba(37,211,102,.32);transition:transform .2s;text-decoration:none}
-.wvshare:hover{transform:translateY(-2px)}
+/* WA msg box */
+.wa-box{width:100%;max-width:360px;background:rgba(37,211,102,.05);border:1px solid rgba(37,211,102,.16);border-radius:var(--r12);padding:14px;position:relative}
+.wa-box-label{position:absolute;top:-9px;left:14px;font-size:8px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--dm);background:var(--dk2);padding:0 8px}
+.wa-msg-text{font-size:11px;color:rgba(255,255,255,.65);line-height:1.75;white-space:pre-wrap;max-height:120px;overflow-y:auto}
+.copy-btn{width:100%;max-width:360px;background:rgba(255,255,255,.04);border:1px solid var(--bd);color:var(--dm);font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:10px;border-radius:var(--r12);cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:6px}
+.copy-btn:hover{background:rgba(201,168,76,.1);color:var(--gl);border-color:var(--g)}
 
-#lead{background:linear-gradient(180deg,var(--dk) 0%,#0E0519 100%)}
-.lgd{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-@media(max-width:768px){.lgd{grid-template-columns:1fr;gap:24px}}
-.srow{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
-.scard{background:var(--cd);border:1px solid var(--bd);border-radius:6px;padding:15px}
-.snum{font-family:'Cinzel',serif;font-size:22px;color:var(--gl);font-weight:700}
-.slbl{font-size:11px;color:var(--dm);margin-top:2px}
-.fcard{background:rgba(255,255,255,.03);border:1px solid var(--bd);border-radius:10px;padding:26px;position:relative;overflow:hidden}
-.fcard::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--s),var(--g),var(--s))}
-.ft2{font-family:'Cinzel',serif;font-size:17px;color:var(--gp);margin-bottom:4px}
-.fs2{font-size:12px;color:var(--dm);margin-bottom:20px}
-.fi{display:flex;flex-direction:column;gap:11px}
-.subbtn{background:linear-gradient(135deg,var(--s),var(--sl));color:#fff;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;border:none;border-radius:4px;padding:13px;cursor:pointer;transition:transform .2s;margin-top:3px}
-.subbtn:hover{transform:translateY(-2px)}
+/* ═══════════════ WISHES SECTION ═══════════════ */
+#wishes{background:linear-gradient(180deg,var(--dk2) 0%,var(--dk) 100%);border-top:1px solid var(--bd)}
+.wishes-header{max-width:600px;margin:0 auto 40px;text-align:center}
+.sender-wrap{max-width:420px;margin:24px auto 0}
+.wishes-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:20px;max-width:1400px;margin:0 auto}
+.wish-card{border-radius:var(--r20);overflow:hidden;background:var(--card);border:1px solid var(--bd);transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s,border-color .3s;cursor:pointer}
+.wish-card:hover{transform:translateY(-8px) scale(1.01);box-shadow:0 24px 60px rgba(201,168,76,.18),0 8px 20px rgba(0,0,0,.4);border-color:var(--bds)}
+.wish-card canvas{width:100%;display:block}
+.wish-card-footer{padding:14px 14px 12px;display:flex;flex-direction:column;gap:10px}
+.wish-style-name{font-size:11px;font-weight:700;color:var(--dm);letter-spacing:1.5px;text-transform:uppercase;text-align:center}
+.wish-actions{display:flex;gap:8px}
+.w-dl-btn{flex:1;background:linear-gradient(135deg,var(--gd),var(--g),var(--gl),var(--g),var(--gd));background-size:200% auto;color:#0d0004;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;border:none;border-radius:50px;padding:10px;cursor:pointer;animation:shimmer 3s linear infinite;transition:transform .2s}
+.w-dl-btn:hover{transform:scale(1.03)}
+.w-wa-btn{flex:1;background:#25D366;color:#fff;font-size:11px;font-weight:700;border:none;border-radius:50px;padding:10px;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:4px}
+.w-wa-btn:hover{background:#1da851;transform:scale(1.03)}
 
-#about{background:linear-gradient(180deg,#0E0519 0%,var(--dk) 100%);border-top:1px solid var(--bd)}
-.svgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px;margin-top:40px}
-.sv{background:var(--cd);border:1px solid var(--bd);border-radius:8px;padding:22px 18px;transition:transform .3s,border-color .3s,box-shadow .3s}
-.sv:hover{transform:translateY(-3px);border-color:rgba(201,168,76,.36);box-shadow:0 10px 32px rgba(201,168,76,.08)}
-.svi{font-size:30px;margin-bottom:11px;display:block}
-.svn{font-family:'Cinzel',serif;font-size:13px;color:var(--gp);font-weight:600;margin-bottom:5px}
-.svd{font-size:12px;color:var(--dm);line-height:1.65}
-.svt{display:inline-block;margin-top:9px;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--sl);border:1px solid rgba(255,107,0,.26);padding:2px 8px;border-radius:2px}
-.acta{margin-top:40px;text-align:center}
-.acta p{font-size:13px;color:var(--dm);margin-bottom:14px}
+/* ═══════════════ LISTINGS ═══════════════ */
+#listings{background:var(--dk)}
+.list-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;max-width:1200px}
+.shop-card{background:var(--card);border:1.5px solid var(--bd);border-radius:var(--r16);padding:20px;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s}
+.shop-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--s),var(--g));opacity:0;transition:opacity .3s}
+.shop-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(201,168,76,.1);border-color:var(--bds)}
+.shop-card:hover::before{opacity:1}
+.shop-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--sl);background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.22);padding:3px 10px;border-radius:50px;margin-bottom:10px}
+.shop-name{font-family:'Cinzel',serif;font-size:15px;font-weight:700;color:var(--gp);margin-bottom:6px}
+.shop-offer{font-size:13px;color:var(--cr);line-height:1.55;margin-bottom:8px}
+.shop-loc{font-size:11px;color:var(--dm);margin-bottom:14px;font-weight:500}
+.wa-card-btn{display:flex;align-items:center;gap:8px;background:rgba(37,211,102,.08);border:1.5px solid rgba(37,211,102,.28);color:#25D366;border-radius:50px;padding:10px 16px;font-size:12px;font-weight:700;cursor:pointer;width:100%;transition:all .2s;text-decoration:none;justify-content:center}
+.wa-card-btn:hover{background:rgba(37,211,102,.18);transform:scale(1.02)}
 
-footer{border-top:1px solid var(--bd);padding:28px 4vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;background:rgba(0,0,0,.3)}
+/* ═══════════════ WA VIRAL ═══════════════ */
+#wviral{background:linear-gradient(135deg,#001500 0%,var(--dk2) 50%,#130800 100%);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);text-align:center}
+.wv-inner{max-width:580px;margin:0 auto}
+.wv-icon{font-size:60px;display:block;margin-bottom:16px;animation:bnc 2s ease-in-out infinite}
+@keyframes bnc{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+.wv-box{background:rgba(37,211,102,.05);border:1px solid rgba(37,211,102,.18);border-radius:var(--r16);padding:20px 22px;text-align:left;margin:24px 0 20px;font-size:13px;color:rgba(255,255,255,.75);line-height:1.85;position:relative}
+.wv-box-label{position:absolute;top:-9px;left:14px;font-size:8px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--dm);background:#001500;padding:0 8px}
+.wv-share{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;font-size:14px;font-weight:700;letter-spacing:.3px;border:none;border-radius:50px;padding:16px 36px;cursor:pointer;box-shadow:0 4px 28px rgba(37,211,102,.3);transition:all .2s;text-decoration:none}
+.wv-share:hover{background:#1da851;transform:scale(1.03)}
+
+/* ═══════════════ LEAD ═══════════════ */
+#lead{background:linear-gradient(180deg,var(--dk) 0%,var(--dk2) 100%)}
+.lead-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;max-width:1000px}
+@media(max-width:768px){.lead-grid{grid-template-columns:1fr;gap:32px}}
+.stat-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+.stat-card{background:var(--card);border:1.5px solid var(--bd);border-radius:var(--r16);padding:18px}
+.stat-num{font-family:'Cinzel',serif;font-size:24px;color:var(--gl);font-weight:700}
+.stat-lbl{font-size:11px;color:var(--dm);margin-top:3px;font-weight:500}
+.form-card{background:var(--card);border:1.5px solid var(--bd);border-radius:var(--r20);padding:28px;position:relative;overflow:hidden}
+.form-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--s),var(--g),var(--s))}
+.form-title{font-family:'Cinzel',serif;font-size:18px;color:var(--gp);margin-bottom:4px;font-weight:700}
+.form-sub{font-size:12px;color:var(--dm);margin-bottom:22px;font-weight:400}
+.form-stack2{display:flex;flex-direction:column;gap:12px}
+.submit-btn{background:var(--s);color:#fff;font-size:13px;font-weight:700;letter-spacing:.3px;border:none;border-radius:50px;padding:14px;cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(255,107,0,.28);margin-top:4px}
+.submit-btn:hover{background:var(--sl);transform:scale(1.02)}
+.submit-btn:active{transform:scale(.97)}
+
+/* ═══════════════ ABOUT ═══════════════ */
+#about{background:linear-gradient(180deg,var(--dk2) 0%,var(--dk) 100%);border-top:1px solid var(--bd)}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px;margin-top:40px;max-width:1100px}
+.svc-card{background:var(--card);border:1.5px solid var(--bd);border-radius:var(--r16);padding:22px 18px;transition:all .3s cubic-bezier(.16,1,.3,1)}
+.svc-card:hover{transform:translateY(-4px);border-color:var(--bds);box-shadow:0 12px 36px rgba(201,168,76,.08)}
+.svc-icon{font-size:28px;margin-bottom:12px;display:block}
+.svc-name{font-family:'Cinzel',serif;font-size:13px;font-weight:700;color:var(--gp);margin-bottom:6px}
+.svc-desc{font-size:12px;color:var(--dm);line-height:1.65;font-weight:400}
+.svc-tag{display:inline-block;margin-top:10px;font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--sl);background:rgba(255,107,0,.08);border:1px solid rgba(255,107,0,.22);padding:3px 10px;border-radius:50px}
+.about-cta{margin-top:48px;text-align:center}
+.about-cta p{font-size:14px;color:var(--dm);margin-bottom:16px}
+
+/* ═══════════════ FOOTER ═══════════════ */
+footer{border-top:1px solid var(--bd);padding:28px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;background:rgba(0,0,0,.25)}
 .fb{font-family:'Cinzel Decorative',serif;font-size:11px;color:var(--g);letter-spacing:2px}
-.fc,.fl{font-size:11px;color:var(--dm)}
+.fc,.fl{font-size:11px;color:var(--dm);font-weight:400}
 .fl span{color:var(--sl)}
 @media(max-width:500px){footer{flex-direction:column;text-align:center}}
-.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(70px);background:rgba(37,211,102,.14);border:1px solid rgba(37,211,102,.36);color:#25D366;padding:10px 20px;border-radius:4px;font-size:12px;font-weight:600;transition:transform .35s;z-index:9999;white-space:nowrap;max-width:90vw;text-align:center}
+
+/* ═══════════════ TOAST ═══════════════ */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:rgba(15,13,26,.9);border:1px solid rgba(37,211,102,.35);color:#25D366;padding:12px 24px;border-radius:50px;font-size:13px;font-weight:600;transition:transform .4s cubic-bezier(.16,1,.3,1);z-index:9999;white-space:nowrap;max-width:90vw;text-align:center;backdrop-filter:blur(12px)}
 .toast.show{transform:translateX(-50%) translateY(0)}
 </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <a class="logo" href="#">ARC<span>G15</span> DIGITAL</a>
   <ul class="nav-links">
-    <li><a href="#gen">Poster</a></li><li><a href="#listings">Shops</a></li>
-    <li><a href="#wviral">Viral</a></li><li><a href="#lead">Join</a></li><li><a href="#about">Services</a></li>
+    <li><a href="#gen">Poster</a></li>
+    <li><a href="#wishes">Wishes</a></li>
+    <li><a href="#listings">Offers</a></li>
+    <li><a href="#lead">Join</a></li>
+    <li><a href="#about">Services</a></li>
   </ul>
-  <button class="nbtn" onclick="document.getElementById('gen').scrollIntoView({behavior:'smooth'})">Create Poster ✦</button>
+  <div class="nav-r">
+    <button class="pill-btn" onclick="document.getElementById('gen').scrollIntoView({behavior:'smooth'})">Create Poster</button>
+  </div>
 </nav>
 
+<!-- HERO -->
 <section id="hero">
   <div class="hbg" id="heroBg"></div>
   <div class="hbg-ov"></div>
-  <svg class="hmand" viewBox="0 0 600 600" fill="none">
-    <g stroke="#C9A84C" stroke-width="0.7">
-      <circle cx="300" cy="300" r="280"/><circle cx="300" cy="300" r="240"/><circle cx="300" cy="300" r="200"/><circle cx="300" cy="300" r="160"/><circle cx="300" cy="300" r="120"/><circle cx="300" cy="300" r="80"/><circle cx="300" cy="300" r="40"/>
-      <line x1="300" y1="20" x2="300" y2="580"/><line x1="20" y1="300" x2="580" y2="300"/>
-      <line x1="100" y1="100" x2="500" y2="500"/><line x1="500" y1="100" x2="100" y2="500"/>
-      <ellipse cx="300" cy="300" rx="280" ry="85"/><ellipse cx="300" cy="300" rx="85" ry="280"/>
-      <ellipse cx="300" cy="300" rx="240" ry="115" transform="rotate(45 300 300)"/>
-      <ellipse cx="300" cy="300" rx="240" ry="115" transform="rotate(-45 300 300)"/>
-    </g>
-  </svg>
-  <div class="hcon">
-    <div class="heye">✦ Ambikapur • Sarguja • Chhattisgarh ✦</div>
-    <span class="hom">ॐ</span>
-    <h1 class="htit"><span class="s">Jai Shree Ram</span> – Ram Navami Special</h1>
-    <div class="hhin">राम नवमी डिजिटल हब – सरगुजा अम्बिकापुर</div>
-    <p class="hsub">Ambikapur, Sarguja ke best shops ke festive offers ek jagah. Free premium poster banao, WhatsApp par share karo.</p>
-    <div class="hbtns">
-      <a href="#gen" class="bp">🎨 Free Poster Banao</a>
-      <a href="#listings" class="bs">🏪 Offers Dekho</a>
+  <svg class="hmandala" viewBox="0 0 600 600" fill="none"><g stroke="#C9A84C" stroke-width=".7"><circle cx="300" cy="300" r="280"/><circle cx="300" cy="300" r="240"/><circle cx="300" cy="300" r="200"/><circle cx="300" cy="300" r="160"/><circle cx="300" cy="300" r="120"/><circle cx="300" cy="300" r="80"/><circle cx="300" cy="300" r="40"/><line x1="300" y1="20" x2="300" y2="580"/><line x1="20" y1="300" x2="580" y2="300"/><line x1="100" y1="100" x2="500" y2="500"/><line x1="500" y1="100" x2="100" y2="500"/><ellipse cx="300" cy="300" rx="280" ry="85"/><ellipse cx="300" cy="300" rx="85" ry="280"/><ellipse cx="300" cy="300" rx="240" ry="115" transform="rotate(45 300 300)"/><ellipse cx="300" cy="300" rx="240" ry="115" transform="rotate(-45 300 300)"/></g></svg>
+  <div class="hero-c">
+    <div class="hero-tag">✦ Ambikapur • Sarguja • Chhattisgarh ✦</div>
+    <span class="hero-om">ॐ</span>
+    <h1 class="hero-title"><span class="s">Jai Shree Ram</span><br>Ram Navami Special</h1>
+    <div class="hero-hindi">राम नवमी डिजिटल हब</div>
+    <div class="hero-year">✦ 2026 ✦</div>
+    <p class="hero-sub">Ambikapur, Sarguja ke shops ke liye free premium poster generator aur wishes cards.</p>
+    <div class="hero-btns">
+      <a href="#gen" class="btn-primary">🎨 Free Poster Banao</a>
+      <a href="#wishes" class="btn-ghost">💌 Wishes Cards</a>
     </div>
-    <div class="hup">
-      <button class="hup-btn" onclick="document.getElementById('hbgFile').click()">🖼️ Hero Background Upload</button>
+    <div class="hero-upload">
+      <button class="upload-ghost" onclick="document.getElementById('hbgFile').click()">🖼️ Hero Background Upload</button>
       <input type="file" id="hbgFile" accept="image/*" style="display:none" onchange="loadHeroBg(event)">
-      <button class="hup-clr" onclick="clearHeroBg()">✕ Clear</button>
+      <button class="ghost-clear" onclick="clearHeroBg()">✕ Clear</button>
     </div>
   </div>
 </section>
-
 <div class="sep"></div>
 
+<!-- GENERATOR -->
 <section id="gen">
-  <div style="margin-bottom:36px" class="rv">
-    <div class="stag">✦ Free Poster Generator</div>
-    <h2 class="stit">Apna Navami Poster Banao – Bilkul Free</h2>
-    <p class="ssub">Details bharo → Live poster ready → Download karo → WhatsApp par share karo.</p>
+  <div class="rv" style="margin-bottom:36px;max-width:560px">
+    <div class="section-tag">✦ Free Tool</div>
+    <h2 class="section-title">Poster Generator</h2>
+    <p class="section-sub">Details bharo → live poster ready → download karo → WhatsApp share. 2026 ke liye ready!</p>
   </div>
-  <div class="gg">
-    <div class="fields rv d1">
+  <div class="gen-layout">
+    <div class="form-stack rv d1">
 
-      <div class="fg">
+      <div class="field">
         <label>🎪 Festival</label>
         <div class="ftabs" id="ftabs">
-          <button class="ft on" onclick="selFest(this,'ramnavami')">🏹 Ram Navami</button>
-          <button class="ft" onclick="selFest(this,'diwali')">🪔 Diwali</button>
-          <button class="ft" onclick="selFest(this,'holi')">🎨 Holi</button>
-          <button class="ft" onclick="selFest(this,'navratri')">🌸 Navratri</button>
-          <button class="ft" onclick="selFest(this,'eid')">🌙 Eid</button>
+          <button class="ftab on" onclick="selFest(this,'ramnavami')">🏹 Ram Navami</button>
+          <button class="ftab" onclick="selFest(this,'diwali')">🪔 Diwali</button>
+          <button class="ftab" onclick="selFest(this,'holi')">🎨 Holi</button>
+          <button class="ftab" onclick="selFest(this,'navratri')">🌸 Navratri</button>
+          <button class="ftab" onclick="selFest(this,'eid')">🌙 Eid</button>
         </div>
       </div>
 
-      <div class="fg">
+      <div class="field">
         <label>📂 Business Type (Auto-Offer)</label>
         <select id="bizType" onchange="autoFill()">
           <option value="">— Select karo, offer auto-fill ho jayega —</option>
@@ -267,761 +338,720 @@ footer{border-top:1px solid var(--bd);padding:28px 4vw;display:flex;align-items:
         </select>
       </div>
 
-      <div class="fg">
+      <div class="field">
         <label>🏪 Shop / Business Name</label>
         <input type="text" id="shopName" placeholder="e.g. Pratham Jewellers">
-        <div class="apills" id="namePills"></div>
+        <div class="pills" id="namePills"></div>
       </div>
 
-      <div class="fg">
+      <div class="field">
         <label>🎁 Offer / Message</label>
         <textarea id="offerTxt" placeholder="Business type select karo — auto fill ho jayega!"></textarea>
-        <div class="apills" id="offerPills"></div>
+        <div class="pills" id="offerPills"></div>
       </div>
 
-      <div class="fg">
+      <div class="field">
         <label>✨ Tagline</label>
         <input type="text" id="tagline" placeholder="e.g. Fine Jewellery • Ambikapur, Sarguja">
-        <div class="apills" id="tagPills"></div>
+        <div class="pills" id="tagPills"></div>
       </div>
 
-      <div class="fg">
+      <div class="field">
         <label>📞 Phone Number</label>
         <input type="tel" id="phone" placeholder="e.g. 8871824348">
       </div>
 
-      <div class="fg">
+      <div class="field">
         <label>📍 Address</label>
-        <input type="text" id="addr" placeholder="e.g. Gandhi Chowk, Ambikapur">
-        <div class="apills">
-          <button class="ap" onclick="pickAddr(this,'Gandhi Chowk, Ambikapur')">Gandhi Chowk</button>
-          <button class="ap" onclick="pickAddr(this,'Sadar Bazar, Ambikapur')">Sadar Bazar</button>
-          <button class="ap" onclick="pickAddr(this,'Station Road, Ambikapur')">Station Road</button>
-          <button class="ap" onclick="pickAddr(this,'Civil Lines, Ambikapur')">Civil Lines</button>
+        <input type="text" id="addr" placeholder="e.g. Gandhi Chowk, Ambikapur, Sarguja">
+        <div class="pills">
+          <button class="pill" onclick="pickField(this,'addr','Gandhi Chowk, Ambikapur')">Gandhi Chowk</button>
+          <button class="pill" onclick="pickField(this,'addr','Sadar Bazar, Ambikapur')">Sadar Bazar</button>
+          <button class="pill" onclick="pickField(this,'addr','Station Road, Ambikapur')">Station Road</button>
+          <button class="pill" onclick="pickField(this,'addr','Civil Lines, Ambikapur')">Civil Lines</button>
         </div>
       </div>
 
-      <!-- SYMBOL PICKER – canvas drawn -->
-      <div class="fg">
-        <label>🎭 Center Symbol (Premium Drawn)</label>
+      <div class="field">
+        <label>🎭 Center Symbol</label>
         <div class="sym-grid" id="symGrid"></div>
       </div>
 
-      <!-- THEME – now buttons -->
-      <div class="fg">
+      <div class="field">
         <label>🎨 Background Theme</label>
-        <div class="th-grid" id="thGrid"></div>
+        <div class="theme-grid" id="themeGrid"></div>
       </div>
 
-      <!-- SIZE -->
-      <div class="fg">
+      <div class="field">
         <label>📐 Poster Size</label>
         <div class="sizetabs">
-          <button class="stb on" onclick="selSize(this,'portrait')">📱 Portrait</button>
-          <button class="stb" onclick="selSize(this,'square')">⬜ Square</button>
-          <button class="stb" onclick="selSize(this,'story')">📲 Story</button>
+          <button class="stab on" onclick="selSize(this,'portrait')">📱 Portrait</button>
+          <button class="stab" onclick="selSize(this,'square')">⬜ Square</button>
+          <button class="stab" onclick="selSize(this,'story')">📲 Story</button>
         </div>
       </div>
 
-      <!-- LOGO -->
-      <div class="fg">
+      <div class="field">
         <label>🏷️ Shop Logo (optional)</label>
         <div class="uprow">
-          <button class="upbtn" onclick="document.getElementById('logoFile').click()">🏷️ Upload Logo</button>
+          <button class="up-ghost" onclick="document.getElementById('logoFile').click()">🏷️ Upload Logo</button>
           <input type="file" id="logoFile" accept="image/*" style="display:none" onchange="loadLogo(event)">
-          <button class="clrbtn" onclick="clearLogo()">✕</button>
+          <button class="clr-ghost" onclick="clearLogo()">✕</button>
         </div>
       </div>
 
-      <!-- POSTER BG -->
-      <div class="fg">
+      <div class="field">
         <label>🖼️ Poster Background Image</label>
         <div class="uprow">
-          <button class="upbtn" onclick="document.getElementById('pbgFile').click()">📁 Upload Image</button>
+          <button class="up-ghost" onclick="document.getElementById('pbgFile').click()">📁 Upload Image</button>
           <input type="file" id="pbgFile" accept="image/*" style="display:none" onchange="loadPosterBg(event)">
-          <button class="clrbtn" onclick="clearPosterBg()">✕</button>
+          <button class="clr-ghost" onclick="clearPosterBg()">✕</button>
         </div>
       </div>
 
-      <button class="gbtn" onclick="downloadPoster()">⬇ DOWNLOAD POSTER (PNG)</button>
+      <button class="gold-btn" onclick="downloadPoster()">⬇ DOWNLOAD POSTER (PNG)</button>
     </div>
 
-    <div class="cvside rv d2">
-      <div class="cvwrap"><canvas id="poster" onclick="downloadPoster()" title="Click to download"></canvas></div>
-      <p class="cvhint">✦ Live Preview – Tap to Download ✦</p>
-      <div class="dlrow">
-        <button class="dlbtn" onclick="downloadPoster()">⬇ Save PNG</button>
-        <button class="wabtn2" onclick="shareWA()">📲 WA Share</button>
+    <div class="cv-side rv d2">
+      <div class="cv-wrap"><canvas id="poster" onclick="downloadPoster()" title="Tap to download"></canvas></div>
+      <p class="cv-hint">✦ Live Preview — Tap to Download ✦</p>
+      <div class="dl-row">
+        <button class="dl-ghost" onclick="downloadPoster()">⬇ Save PNG</button>
+        <button class="wa-solid" onclick="shareWA()">📲 WA Share</button>
       </div>
-      <div class="wamsg"><div class="wamsg-txt" id="waMsgTxt">Details bharo – auto message yahan dikhega...</div></div>
-      <button class="copybtn" onclick="copyMsg()">📋 Copy WhatsApp Message</button>
+      <div class="wa-box">
+        <div class="wa-box-label">Auto WA Message</div>
+        <div class="wa-msg-text" id="waMsgTxt">Details bharo — auto message yahan dikhega...</div>
+      </div>
+      <button class="copy-btn" onclick="copyMsg()">📋 Copy WhatsApp Message</button>
     </div>
   </div>
 </section>
-
 <div class="sep"></div>
 
+<!-- WISHES -->
+<section id="wishes">
+  <div class="wishes-header rv">
+    <div class="section-tag">✦ 5 Premium Styles</div>
+    <h2 class="section-title">Ram Navami 2026 Wishes Cards</h2>
+    <p class="section-sub">Premium canvas-drawn cards. Apna naam daalo, download karo, WhatsApp par share karo.</p>
+    <div class="sender-wrap" style="display:flex;flex-direction:column;gap:14px">
+      <div class="field">
+        <label>✍️ Sender Name / Shop Name (optional)</label>
+        <input type="text" id="senderName" placeholder="e.g. Pratham Jewellers, Ambikapur" oninput="rebuildWishes()">
+        <div class="pills" style="margin-top:6px">
+          <button class="pill" onclick="pickSender(this,'Pratham Jewellers, Ambikapur')">Pratham Jewellers</button>
+          <button class="pill" onclick="pickSender(this,'Ambika Jewellers, Ambikapur')">Ambika Jewellers</button>
+          <button class="pill" onclick="pickSender(this,'ARC G15 Digital, Ambikapur')">ARC G15 Digital</button>
+          <button class="pill" onclick="pickSender(this,'Shri Ram Sweets, Ambikapur')">Shri Ram Sweets</button>
+          <button class="pill" onclick="pickSender(this,'Navrang Textiles, Ambikapur')">Navrang Textiles</button>
+        </div>
+      </div>
+      <div class="field">
+        <label>💬 Wish Tagline (card pe dikhhegi)</label>
+        <input type="text" id="wishTagline" placeholder="e.g. आपके जीवन में सुख-समृद्धि आए!" oninput="rebuildWishes()">
+        <div class="pills" style="margin-top:6px" id="wishTagPills">
+          <button class="pill on" onclick="pickWishTag(this,'जय श्री राम की हार्दिक शुभकामनाएं! 🙏')">Option 1</button>
+          <button class="pill" onclick="pickWishTag(this,'Ram Navami 2026 ki Hardik Shubhkamnayein! 🏹')">Option 2</button>
+          <button class="pill" onclick="pickWishTag(this,'सुख, समृद्धि और सौभाग्य की कामना! ✨')">Option 3</button>
+          <button class="pill" onclick="pickWishTag(this,'प्रभु राम का आशीर्वाद सदा बना रहे! 🛕')">Option 4</button>
+          <button class="pill" onclick="pickWishTag(this,'Wishing you peace, joy & prosperity! 💫')">Option 5</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wishes-grid" id="wishGrid"></div>
+</section>
+<div class="sep"></div>
+
+<!-- LISTINGS -->
 <section id="listings">
-  <div style="margin-bottom:36px" class="rv">
-    <div class="stag">✦ Ambikapur • Sarguja</div>
-    <h2 class="stit">Navami Offers – Ambikapur</h2>
-    <p class="ssub">Sarguja ke favourite shops ke Ram Navami special discounts.</p>
+  <div style="margin-bottom:32px" class="rv">
+    <div class="section-tag">✦ Ambikapur • Sarguja</div>
+    <h2 class="section-title">Navami 2026 Offers</h2>
+    <p class="section-sub">Sarguja ke favourite shops ke Ram Navami 2026 special discounts.</p>
   </div>
-  <div class="lgrid" id="listGrid"></div>
+  <div class="list-grid rv d1" id="listGrid"></div>
 </section>
-
 <div class="sep"></div>
 
+<!-- VIRAL -->
 <section id="wviral">
-  <div class="wvin">
-    <div class="rv"><div class="stag">✦ Viral Campaign</div><h2 class="stit">Ek Tap Mein Poora Sarguja Ko Bhejo</h2><p class="ssub" style="margin:0 auto;text-align:center">Pre-made viral message – broadcast karo!</p></div>
-    <span class="wvi rv d1">💬</span>
-    <div class="wvbox rv d2">🙏 <strong>Jai Shree Ram!</strong> Ram Navami 2025 ki hardik shubhkamnayein! 🏹<br><br>🛕 <strong>Ram Navami Special Offers – Ambikapur, Sarguja</strong><br><br>💎 <em>Pratham Jewellers</em> – Navami special gold offers<br>💎 <em>Ambika Jewellers</em> – Making charge FREE<br>🍬 <em>Shri Ram Sweets</em> – Buy 1 Kg, Get 500g FREE<br>👗 <em>Navrang Textiles</em> – 15% off Ethnic Wear<br><br>📍 Ambikapur, Sarguja CG | 🌐 arcg15digital.in<br><br>✨ <em>Powered by ARC G15 Digital</em> 🚀</div>
-    <a class="wvshare rv d3" id="waViralBtn" href="#" target="_blank">📲 Share on WhatsApp</a>
+  <div class="wv-inner">
+    <div class="rv"><div class="section-tag">✦ Viral Campaign</div><h2 class="section-title">Ek Tap Mein Poora Sarguja Ko Bhejo</h2><p class="section-sub" style="margin:0 auto;text-align:center">Pre-made viral message — broadcast karo!</p></div>
+    <span class="wv-icon rv d1">💬</span>
+    <div class="wv-box rv d2">
+      <div class="wv-box-label">Viral Message Preview</div>
+      🙏 <strong>Jai Shree Ram!</strong> Ram Navami 2026 ki hardik shubhkamnayein! 🏹<br><br>
+      🛕 <strong>Ram Navami 2026 Special Offers – Ambikapur, Sarguja</strong><br><br>
+      💎 <em>Pratham Jewellers</em> – Navami special gold offers<br>
+      💎 <em>Ambika Jewellers</em> – Making charge FREE<br>
+      🍬 <em>Shri Ram Sweets</em> – Buy 1 Kg, Get 500g FREE<br>
+      👗 <em>Navrang Textiles</em> – 15% off Ethnic Wear<br>
+      🛕 <em>Pooja Bhandar</em> – Puja Kit ₹199 only<br><br>
+      📍 Ambikapur, Sarguja CG &nbsp;|&nbsp; 🌐 arcg15digital.in<br><br>
+      ✨ <em>Powered by ARC G15 Digital – Ambikapur</em> 🚀
+    </div>
+    <a class="wv-share rv d3" id="waViralBtn" href="#" target="_blank">📲 Share on WhatsApp</a>
   </div>
 </section>
-
 <div class="sep"></div>
 
+<!-- LEAD -->
 <section id="lead">
-  <div class="lgd">
-    <div class="rv">
-      <div class="stag">✦ Join Free</div>
-      <h2 class="stit">Apna Shop List Karo – Bilkul Free</h2>
-      <p class="ssub">Ambikapur, Sarguja ke hundreds of customers ke saamne apna shop dikhao. Zero cost.</p>
-      <div class="srow">
-        <div class="scard rv d1"><div class="snum">500+</div><div class="slbl">Sarguja Customers</div></div>
-        <div class="scard rv d2"><div class="snum">30+</div><div class="slbl">Shops Listed</div></div>
-        <div class="scard rv d3"><div class="snum">FREE</div><div class="slbl">Zero Cost</div></div>
-        <div class="scard rv d1"><div class="snum">🚀</div><div class="slbl">Instant Live</div></div>
+  <div class="lead-grid rv">
+    <div>
+      <div class="section-tag">✦ Join Free</div>
+      <h2 class="section-title">Apna Shop List Karo – Free</h2>
+      <p class="section-sub">Ambikapur, Sarguja ke hundreds of customers ke saamne shop dikhao. Zero cost. 2026 mein digital bano.</p>
+      <div class="stat-row">
+        <div class="stat-card rv d1"><div class="stat-num">500+</div><div class="stat-lbl">Sarguja Customers</div></div>
+        <div class="stat-card rv d2"><div class="stat-num">30+</div><div class="stat-lbl">Shops Listed</div></div>
+        <div class="stat-card rv d3"><div class="stat-num">FREE</div><div class="stat-lbl">Zero Cost</div></div>
+        <div class="stat-card rv d1"><div class="stat-num">🚀</div><div class="stat-lbl">Instant Live</div></div>
       </div>
     </div>
-    <div class="fcard rv d2">
-      <div class="ft2">Register Free Now</div>
-      <div class="fs2">Ambikapur, Sarguja mein 24 hrs mein listing live.</div>
-      <div class="fi">
-        <div class="fg"><label>👤 Naam</label><input type="text" id="lName" placeholder="Ramesh Gupta"></div>
-        <div class="fg"><label>🏪 Business</label><input type="text" id="lBiz" placeholder="Pratham Jewellers"></div>
-        <div class="fg"><label>📞 Phone</label><input type="tel" id="lPhone" placeholder="8871824348"></div>
-        <div class="fg"><label>📍 Address</label><input type="text" id="lAddr" placeholder="Gandhi Chowk, Ambikapur"></div>
-        <div class="fg"><label>🎁 Offer</label><textarea id="lOffer" placeholder="e.g. 10% off on all gold jewellery"></textarea></div>
-        <button class="subbtn" onclick="handleLead()">✦ Free Mein Register Karo</button>
+    <div class="form-card rv d2">
+      <div class="form-title">Register Free Now</div>
+      <div class="form-sub">Ambikapur mein 24 hrs mein listing live.</div>
+      <div class="form-stack2">
+        <div class="field"><label>👤 Naam</label><input type="text" id="lName" placeholder="Ramesh Gupta"></div>
+        <div class="field"><label>🏪 Business</label><input type="text" id="lBiz" placeholder="Pratham Jewellers"></div>
+        <div class="field"><label>📞 Phone</label><input type="tel" id="lPhone" placeholder="8871824348"></div>
+        <div class="field"><label>📍 Address</label><input type="text" id="lAddr" placeholder="Gandhi Chowk, Ambikapur, Sarguja"></div>
+        <div class="field"><label>🎁 Navami 2026 Offer</label><textarea id="lOffer" placeholder="e.g. 10% off on all gold jewellery"></textarea></div>
+        <button class="submit-btn" onclick="handleLead()">✦ Free Mein Register Karo</button>
       </div>
     </div>
   </div>
 </section>
-
 <div class="sep"></div>
 
+<!-- ABOUT -->
 <section id="about">
-  <div class="rv" style="max-width:640px">
-    <div class="stag">✦ ARC G15 Digital – Ambikapur</div>
-    <h2 class="stit">Sarguja Ke Local Businesses Ko Digital Banaao</h2>
-    <p class="ssub">Ambikapur aur poore Sarguja district ke liye affordable, results-driven digital marketing.</p>
+  <div class="rv" style="max-width:600px">
+    <div class="section-tag">✦ ARC G15 Digital – Ambikapur</div>
+    <h2 class="section-title">Sarguja Ke Local Businesses Ko Digital Banaao</h2>
+    <p class="section-sub">Ambikapur aur poore Sarguja district ke liye affordable digital marketing. 2026 mein online aao.</p>
   </div>
-  <div class="svgrid">
-    <div class="sv rv d1"><span class="svi">📍</span><div class="svn">Google My Business</div><div class="svd">Google Maps pe aao. Koi bhi "nearby shop" search kare — aap pehle nazar aao.</div><div class="svt">Most Popular</div></div>
-    <div class="sv rv d2"><span class="svi">📸</span><div class="svn">Instagram Management</div><div class="svd">Sarguja mein local following badao. Reels, posts, stories — professional quality.</div><div class="svt">High Reach</div></div>
-    <div class="sv rv d3"><span class="svi">🌐</span><div class="svn">Business Website</div><div class="svd">Mobile-friendly website. 24/7 online visible raho — products, offers, contact.</div><div class="svt">Professional</div></div>
-    <div class="sv rv d1"><span class="svi">🎨</span><div class="svn">Festival Posters</div><div class="svd">Navami, Diwali, Holi, Navratri — premium posters. WhatsApp pe chha jao.</div><div class="svt">Done For You</div></div>
-    <div class="sv rv d2"><span class="svi">📲</span><div class="svn">WhatsApp Marketing</div><div class="svd">Ambikapur customers ko directly offers bhejo. Fast results, high open rate.</div><div class="svt">Fast Results</div></div>
-    <div class="sv rv d3"><span class="svi">📊</span><div class="svn">Digital Campaigns</div><div class="svd">Sarguja-targeted campaigns — actual foot traffic, measurable, affordable.</div><div class="svt">Local Targeted</div></div>
+  <div class="svc-grid">
+    <div class="svc-card rv d1"><span class="svc-icon">📍</span><div class="svc-name">Google My Business</div><div class="svc-desc">Google Maps pe aao. Koi bhi nearby search kare — aap pehle nazar aao.</div><div class="svc-tag">Most Popular</div></div>
+    <div class="svc-card rv d2"><span class="svc-icon">📸</span><div class="svc-name">Instagram Management</div><div class="svc-desc">Reels, posts & stories. Sarguja mein local following badao.</div><div class="svc-tag">High Reach</div></div>
+    <div class="svc-card rv d3"><span class="svc-icon">🌐</span><div class="svc-name">Business Website</div><div class="svc-desc">Mobile-friendly website. 24/7 online visible raho.</div><div class="svc-tag">Professional</div></div>
+    <div class="svc-card rv d1"><span class="svc-icon">🎨</span><div class="svc-name">Festival Posters</div><div class="svc-desc">Navami, Diwali, Holi — premium posters. WhatsApp pe chha jao.</div><div class="svc-tag">Done For You</div></div>
+    <div class="svc-card rv d2"><span class="svc-icon">📲</span><div class="svc-name">WhatsApp Marketing</div><div class="svc-desc">Customers ko directly offers bhejo. Fast results.</div><div class="svc-tag">Fast Results</div></div>
+    <div class="svc-card rv d3"><span class="svc-icon">📊</span><div class="svc-name">Digital Campaigns</div><div class="svc-desc">Sarguja-targeted campaigns — measurable, affordable.</div><div class="svc-tag">Local Targeted</div></div>
   </div>
-  <div class="acta rv">
-    <p>Ambikapur mein apna business online laana hai? Abhi baat karo!</p>
-    <a href="https://wa.me/918871824348?text=Hello%20ARC%20G15%20Digital!%20Mujhe%20Ambikapur%20mein%20business%20online%20laana%20hai!" class="bp" target="_blank">📞 ARC G15 Digital Se Baat Karo</a>
+  <div class="about-cta rv">
+    <p>Ambikapur mein apna business 2026 mein online laana hai? Abhi baat karo!</p>
+    <a href="https://wa.me/918871824348?text=Hello%20ARC%20G15%20Digital!%20Mujhe%20Ambikapur%20mein%20business%20online%20laana%20hai%202026%20mein!" class="btn-primary" target="_blank">📞 ARC G15 Digital Se Baat Karo</a>
   </div>
 </section>
 
 <footer>
   <div class="fb">ARC G15 DIGITAL</div>
-  <div class="fc">© 2025 ARC G15 Digital. Ambikapur, Sarguja, Chhattisgarh.</div>
-  <div class="fl">Made with <span>♥</span> for Sarguja businesses</div>
+  <div class="fc">© 2026 ARC G15 Digital. Ambikapur, Sarguja, Chhattisgarh.</div>
+  <div class="fl">Made with <span>♥</span> for Sarguja</div>
 </footer>
 <div class="toast" id="toast"></div>
 
 <script>
-/* ══════════════════════════════════
-   CANVAS SYMBOL DRAWING LIBRARY
-══════════════════════════════════ */
-// Each symbol is drawn on a small preview canvas AND on the main poster
-// Color: gold = #C9A84C / #F0D080
+/* ═══════════════════════════════════════════════
+   CONSTANTS
+═══════════════════════════════════════════════ */
+const GOLD='#C9A84C',GOLDL='#F0D080',GOLDP='#FDE99A',GD='#8B6914';
+const SAFF='#FF6B00',SAFFL='#FF9234';
 
-const SYMBOLS = [
-  {id:'dhanush', label:'Dhanush',
-   draw:(cx,x,y,r,gold)=>{
-     // Bow (arc) + arrow
-     cx.save();cx.strokeStyle=gold;cx.lineWidth=r*0.06;cx.lineCap='round';
-     cx.beginPath();cx.arc(x,y,r*.7,Math.PI*.8,Math.PI*2.2);cx.stroke();
-     // Bowstring
-     cx.lineWidth=r*0.03;cx.beginPath();
-     cx.moveTo(x+Math.cos(Math.PI*.8)*r*.7,y+Math.sin(Math.PI*.8)*r*.7);
-     cx.lineTo(x+Math.cos(Math.PI*2.2)*r*.7,y+Math.sin(Math.PI*2.2)*r*.7);
-     cx.stroke();
-     // Arrow shaft
-     cx.lineWidth=r*0.05;cx.beginPath();
-     cx.moveTo(x-r*.55,y);cx.lineTo(x+r*.75,y);cx.stroke();
-     // Arrowhead
-     cx.fillStyle=gold;cx.beginPath();
-     cx.moveTo(x+r*.75,y);cx.lineTo(x+r*.5,y-r*.12);cx.lineTo(x+r*.5,y+r*.12);cx.closePath();cx.fill();
-     // Tail feathers
-     cx.lineWidth=r*0.04;
-     cx.beginPath();cx.moveTo(x-r*.55,y);cx.lineTo(x-r*.75,y-r*.18);cx.stroke();
-     cx.beginPath();cx.moveTo(x-r*.55,y);cx.lineTo(x-r*.75,y+r*.18);cx.stroke();
-     cx.restore();
-   }},
-  {id:'om', label:'OM',
-   draw:(cx,x,y,r,gold)=>{
-     cx.save();cx.fillStyle=gold;
-     cx.shadowColor='rgba(201,168,76,0.8)';cx.shadowBlur=r*.3;
-     cx.font=`bold ${r*1.4}px "Tiro Devanagari Hindi",serif`;
-     cx.textAlign='center';cx.textBaseline='middle';
-     cx.fillText('ॐ',x,y+r*.06);
-     cx.restore();
-   }},
-  {id:'mandir', label:'Mandir',
-   draw:(cx,x,y,r,gold)=>{
-     cx.save();cx.fillStyle=gold;cx.strokeStyle=gold;cx.lineWidth=r*.04;
-     // Base
-     cx.fillRect(x-r*.65,y+r*.4,r*1.3,r*.18);
-     // Main body
-     cx.fillRect(x-r*.4,y+r*.05,r*.8,r*.38);
-     // Door
-     cx.fillStyle='rgba(201,168,76,0.2)';
-     cx.beginPath();cx.arc(x,y+r*.2,r*.15,Math.PI,0,false);cx.rect(x-r*.15,y+r*.2,r*.3,r*.22);cx.fill();
-     cx.fillStyle=gold;
-     // Shikhar (top spire)
-     cx.beginPath();cx.moveTo(x-r*.38,y+r*.05);cx.lineTo(x,y-r*.55);cx.lineTo(x+r*.38,y+r*.05);cx.closePath();cx.fill();
-     // Kalash on top
-     cx.beginPath();cx.arc(x,y-r*.55,r*.1,0,Math.PI*2);cx.fill();
-     // Side pillars
-     cx.fillRect(x-r*.5,y+r*.05,r*.1,r*.38);
-     cx.fillRect(x+r*.4,y+r*.05,r*.1,r*.38);
-     cx.restore();
-   }},
-  {id:'diya', label:'Diya',
-   draw:(cx,x,y,r,gold)=>{
-     cx.save();
-     // Flame glow
-     const fl=cx.createRadialGradient(x,y-r*.3,r*.05,x,y-r*.3,r*.35);
-     fl.addColorStop(0,'rgba(255,220,50,0.9)');fl.addColorStop(0.5,'rgba(255,140,0,0.5)');fl.addColorStop(1,'transparent');
-     cx.fillStyle=fl;cx.beginPath();cx.arc(x,y-r*.2,r*.5,0,Math.PI*2);cx.fill();
-     // Flame shape
-     cx.fillStyle='#FFF176';
-     cx.beginPath();cx.moveTo(x,y-r*.7);cx.bezierCurveTo(x+r*.18,y-r*.4,x+r*.14,y-r*.15,x,y-r*.08);cx.bezierCurveTo(x-r*.14,y-r*.15,x-r*.18,y-r*.4,x,y-r*.7);cx.fill();
-     cx.fillStyle='#FF6B00';
-     cx.beginPath();cx.moveTo(x,y-r*.58);cx.bezierCurveTo(x+r*.08,y-r*.38,x+r*.07,y-r*.2,x,y-r*.1);cx.bezierCurveTo(x-r*.07,y-r*.2,x-r*.08,y-r*.38,x,y-r*.58);cx.fill();
-     // Diya bowl
-     cx.fillStyle=gold;
-     cx.beginPath();cx.ellipse(x,y+r*.12,r*.45,r*.18,0,0,Math.PI);cx.closePath();cx.fill();
-     cx.beginPath();cx.ellipse(x,y+r*.12,r*.45,r*.12,0,0,Math.PI*2);cx.fill();
-     // Wick line
-     cx.strokeStyle='rgba(255,220,50,0.8)';cx.lineWidth=r*.06;
-     cx.beginPath();cx.moveTo(x,y+r*.08);cx.lineTo(x,y-r*.08);cx.stroke();
-     cx.restore();
-   }},
-  {id:'lotus', label:'Lotus',
-   draw:(cx,x,y,r,gold)=>{
-     cx.save();
-     // Petals
-     const PINK=['#FF6B9D','#FF4081','#E91E8C','rgba(255,107,157,0.7)'];
-     for(let i=0;i<8;i++){
-       cx.save();cx.translate(x,y);cx.rotate((i/8)*Math.PI*2);
-       cx.fillStyle=i%2===0?'#FF6B9D':'rgba(255,107,157,0.65)';
-       cx.beginPath();cx.ellipse(0,-r*.58,r*.2,r*.38,0,0,Math.PI*2);cx.fill();
-       cx.restore();
-     }
-     // Center
-     cx.fillStyle='#FFD700';cx.beginPath();cx.arc(x,y,r*.22,0,Math.PI*2);cx.fill();
-     cx.fillStyle=gold;cx.beginPath();cx.arc(x,y,r*.16,0,Math.PI*2);cx.fill();
-     cx.restore();
-   }},
-  {id:'trishul', label:'Trishul',
-   draw:(cx,x,y,r,gold)=>{
-     cx.save();cx.fillStyle=gold;cx.strokeStyle=gold;cx.lineWidth=r*.06;cx.lineCap='round';
-     // Main shaft
-     cx.fillRect(x-r*.04,y-r*.1,r*.08,r*.75);
-     // Center prong
-     cx.beginPath();cx.moveTo(x,y-r*.65);cx.lineTo(x-r*.1,y-r*.1);cx.lineTo(x+r*.1,y-r*.1);cx.closePath();cx.fill();
-     // Left prong
-     cx.beginPath();cx.moveTo(x-r*.38,y-r*.38);cx.bezierCurveTo(x-r*.42,y-r*.6,x-r*.18,y-r*.62,x-r*.18,y-r*.38);cx.stroke();
-     // Right prong
-     cx.beginPath();cx.moveTo(x+r*.38,y-r*.38);cx.bezierCurveTo(x+r*.42,y-r*.6,x+r*.18,y-r*.62,x+r*.18,y-r*.38);cx.stroke();
-     // Cross bar
-     cx.fillRect(x-r*.44,y-r*.35,r*.88,r*.07);
-     // Handle knob
-     cx.beginPath();cx.arc(x,y+r*.65,r*.12,0,Math.PI*2);cx.fill();
-     cx.restore();
-   }},
-  {id:'shankh', label:'Shankh',
-   draw:(cx,x,y,r,gold)=>{
-     cx.save();cx.fillStyle=gold;cx.strokeStyle=gold;cx.lineWidth=r*.04;
-     // Main shell body
-     cx.beginPath();cx.ellipse(x+r*.05,y,r*.38,r*.52,Math.PI*.15,0,Math.PI*2);cx.fill();
-     // Opening
-     cx.fillStyle=cx.createLinearGradient(x-r*.3,y,x+r*.2,y);
-     const sg=cx.createLinearGradient(x-r*.2,y,x+r*.15,y);
-     sg.addColorStop(0,'rgba(0,0,0,0.3)');sg.addColorStop(1,'rgba(201,168,76,0.1)');
-     cx.fillStyle=sg;
-     cx.beginPath();cx.ellipse(x-r*.15,y+r*.1,r*.2,r*.3,Math.PI*.3,0,Math.PI*2);cx.fill();
-     // Spiral lines
-     cx.fillStyle=gold;cx.strokeStyle='rgba(201,168,76,0.5)';cx.lineWidth=r*.03;
-     cx.beginPath();cx.arc(x+r*.12,y-r*.05,r*.18,0.3,3.2);cx.stroke();
-     cx.beginPath();cx.arc(x+r*.06,y,r*.26,0.5,3.0);cx.stroke();
-     // Tip
-     cx.fillStyle=gold;cx.beginPath();cx.arc(x+r*.4,y-r*.28,r*.08,0,Math.PI*2);cx.fill();
-     cx.restore();
-   }},
-  {id:'kalash', label:'Kalash',
-   draw:(cx,x,y,r,gold)=>{
-     cx.save();cx.fillStyle=gold;
-     // Base
-     cx.fillRect(x-r*.28,y+r*.5,r*.56,r*.1);
-     cx.fillRect(x-r*.2,y+r*.38,r*.4,r*.14);
-     // Body
-     cx.beginPath();cx.moveTo(x-r*.3,y+r*.38);cx.bezierCurveTo(x-r*.45,y,x-r*.38,y-r*.35,x-r*.22,y-r*.5);cx.lineTo(x+r*.22,y-r*.5);cx.bezierCurveTo(x+r*.38,y-r*.35,x+r*.45,y,x+r*.3,y+r*.38);cx.closePath();cx.fill();
-     // Neck
-     cx.fillRect(x-r*.14,y-r*.5,r*.28,r*.1);
-     // Mango leaves
-     cx.fillStyle='#4CAF50';
-     [-r*.14,r*.0,r*.14].forEach(ox=>{cx.beginPath();cx.ellipse(x+ox,y-r*.56,r*.08,r*.18,0,0,Math.PI*2);cx.fill();});
-     // Coconut on top
-     cx.fillStyle='#8D6E63';cx.beginPath();cx.arc(x,y-r*.72,r*.16,0,Math.PI*2);cx.fill();
-     cx.fillStyle=gold;cx.beginPath();cx.arc(x,y-r*.72,r*.1,0,Math.PI*2);cx.fill();
-     // Decorations on body
-     cx.fillStyle='rgba(240,208,128,0.4)';
-     cx.beginPath();cx.arc(x,y+r*.05,r*.12,0,Math.PI*2);cx.fill();
-     cx.restore();
-   }},
-  {id:'sudarshan', label:'Sudarshan',
-   draw:(cx,x,y,r,gold)=>{
-     cx.save();
-     // Spinning chakra
-     for(let i=0;i<12;i++){
-       cx.save();cx.translate(x,y);cx.rotate((i/12)*Math.PI*2);
-       const g2=cx.createLinearGradient(0,r*.25,0,r*.55);
-       g2.addColorStop(0,gold);g2.addColorStop(1,'rgba(201,168,76,0.3)');
-       cx.fillStyle=g2;
-       cx.beginPath();cx.moveTo(-r*.08,r*.25);cx.lineTo(0,r*.6);cx.lineTo(r*.08,r*.25);cx.closePath();cx.fill();
-       cx.restore();
-     }
-     // Inner circles
-     cx.strokeStyle=gold;cx.lineWidth=r*.05;
-     cx.beginPath();cx.arc(x,y,r*.45,0,Math.PI*2);cx.stroke();
-     cx.lineWidth=r*.03;
-     cx.beginPath();cx.arc(x,y,r*.26,0,Math.PI*2);cx.stroke();
-     cx.fillStyle=gold;cx.beginPath();cx.arc(x,y,r*.12,0,Math.PI*2);cx.fill();
-     cx.restore();
-   }},
+/* ═══════════════════════════════════════════════
+   DRAWN SYMBOLS
+═══════════════════════════════════════════════ */
+const SYMS=[
+  {label:'Dhanush',draw:(cx,x,y,r,c)=>{
+    cx.save();cx.strokeStyle=c;cx.lineWidth=r*.09;cx.lineCap='round';
+    cx.beginPath();cx.arc(x,y,r,Math.PI*.7,Math.PI*2.3);cx.stroke();
+    cx.lineWidth=r*.04;cx.beginPath();cx.moveTo(x+Math.cos(Math.PI*.7)*r,y+Math.sin(Math.PI*.7)*r);cx.lineTo(x+Math.cos(Math.PI*2.3)*r,y+Math.sin(Math.PI*2.3)*r);cx.stroke();
+    cx.lineWidth=r*.07;cx.beginPath();cx.moveTo(x-r*.88,y);cx.lineTo(x+r*1.12,y);cx.stroke();
+    cx.fillStyle=c;cx.beginPath();cx.moveTo(x+r*1.12,y);cx.lineTo(x+r*.84,y-r*.18);cx.lineTo(x+r*.84,y+r*.18);cx.closePath();cx.fill();
+    cx.lineWidth=r*.05;cx.beginPath();cx.moveTo(x-r*.88,y);cx.lineTo(x-r*1.12,y-r*.26);cx.stroke();
+    cx.beginPath();cx.moveTo(x-r*.88,y);cx.lineTo(x-r*1.12,y+r*.26);cx.stroke();cx.restore();
+  }},
+  {label:'OM',draw:(cx,x,y,r,c)=>{
+    cx.save();cx.fillStyle=c;cx.shadowColor='rgba(201,168,76,0.9)';cx.shadowBlur=r*.4;
+    cx.font=`bold ${r*1.5}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';
+    cx.fillText('ॐ',x,y+r*.06);cx.restore();
+  }},
+  {label:'Mandir',draw:(cx,x,y,r,c)=>{
+    cx.save();cx.fillStyle=c;
+    cx.fillRect(x-r*.7,y+r*.44,r*1.4,r*.2);cx.fillRect(x-r*.44,y+r*.06,r*.88,r*.4);
+    cx.fillStyle='rgba(201,168,76,0.18)';cx.beginPath();cx.arc(x,y+r*.22,r*.16,Math.PI,0,false);cx.rect(x-r*.16,y+r*.22,r*.32,r*.24);cx.fill();
+    cx.fillStyle=c;cx.beginPath();cx.moveTo(x-r*.42,y+r*.06);cx.lineTo(x,y-r*.6);cx.lineTo(x+r*.42,y+r*.06);cx.closePath();cx.fill();
+    cx.beginPath();cx.arc(x,y-r*.6,r*.11,0,Math.PI*2);cx.fill();
+    cx.fillRect(x-r*.56,y+r*.06,r*.12,r*.4);cx.fillRect(x+r*.44,y+r*.06,r*.12,r*.4);cx.restore();
+  }},
+  {label:'Diya',draw:(cx,x,y,r,c)=>{
+    cx.save();
+    const fl=cx.createRadialGradient(x,y-r*.35,r*.06,x,y-r*.25,r*.4);fl.addColorStop(0,'rgba(255,220,50,.9)');fl.addColorStop(.5,'rgba(255,140,0,.45)');fl.addColorStop(1,'transparent');
+    cx.fillStyle=fl;cx.beginPath();cx.arc(x,y-r*.2,r*.55,0,Math.PI*2);cx.fill();
+    cx.fillStyle='#FFF176';cx.beginPath();cx.moveTo(x,y-r*1.0);cx.bezierCurveTo(x+r*.24,y-r*.6,x+r*.18,y-r*.22,x,y-r*.12);cx.bezierCurveTo(x-r*.18,y-r*.22,x-r*.24,y-r*.6,x,y-r*1.0);cx.fill();
+    cx.fillStyle='#FF6B00';cx.beginPath();cx.moveTo(x,y-r*.85);cx.bezierCurveTo(x+r*.1,y-r*.55,x+r*.08,y-r*.28,x,y-r*.14);cx.bezierCurveTo(x-r*.08,y-r*.28,x-r*.1,y-r*.55,x,y-r*.85);cx.fill();
+    cx.fillStyle=c;cx.beginPath();cx.ellipse(x,y+r*.16,r*.62,r*.26,0,0,Math.PI);cx.closePath();cx.fill();
+    cx.beginPath();cx.ellipse(x,y+r*.16,r*.62,r*.18,0,0,Math.PI*2);cx.fill();cx.restore();
+  }},
+  {label:'Lotus',draw:(cx,x,y,r)=>{
+    cx.save();
+    for(let i=0;i<8;i++){cx.save();cx.translate(x,y);cx.rotate(i/8*Math.PI*2);cx.fillStyle=i%2===0?'#FF6B9D':'rgba(255,107,157,0.55)';cx.beginPath();cx.ellipse(0,-r*.72,r*.24,r*.46,0,0,Math.PI*2);cx.fill();cx.restore();}
+    cx.fillStyle='#FFD700';cx.beginPath();cx.arc(x,y,r*.26,0,Math.PI*2);cx.fill();
+    cx.fillStyle=GOLD;cx.beginPath();cx.arc(x,y,r*.17,0,Math.PI*2);cx.fill();cx.restore();
+  }},
+  {label:'Trishul',draw:(cx,x,y,r,c)=>{
+    cx.save();cx.fillStyle=c;cx.strokeStyle=c;cx.lineWidth=r*.07;cx.lineCap='round';
+    cx.fillRect(x-r*.06,y-r*.15,r*.12,r*1.12);
+    cx.beginPath();cx.moveTo(x,y-r*1.0);cx.lineTo(x-r*.14,y-r*.15);cx.lineTo(x+r*.14,y-r*.15);cx.closePath();cx.fill();
+    cx.beginPath();cx.moveTo(x-r*.56,y-r*.54);cx.bezierCurveTo(x-r*.64,y-r*.88,x-r*.28,y-r*.9,x-r*.28,y-r*.54);cx.stroke();
+    cx.beginPath();cx.moveTo(x+r*.56,y-r*.54);cx.bezierCurveTo(x+r*.64,y-r*.88,x+r*.28,y-r*.9,x+r*.28,y-r*.54);cx.stroke();
+    cx.fillRect(x-r*.66,y-r*.52,r*1.32,r*.1);
+    cx.beginPath();cx.arc(x,y+r*1.0,r*.18,0,Math.PI*2);cx.fill();cx.restore();
+  }},
+  {label:'Shankh',draw:(cx,x,y,r,c)=>{
+    cx.save();cx.fillStyle=c;
+    cx.beginPath();cx.ellipse(x+r*.06,y,r*.52,r*.72,Math.PI*.15,0,Math.PI*2);cx.fill();
+    const sg=cx.createLinearGradient(x-r*.28,y,x+r*.18,y);sg.addColorStop(0,'rgba(0,0,0,0.32)');sg.addColorStop(1,'rgba(201,168,76,0.08)');
+    cx.fillStyle=sg;cx.beginPath();cx.ellipse(x-r*.2,y+r*.14,r*.26,r*.4,Math.PI*.3,0,Math.PI*2);cx.fill();
+    cx.strokeStyle='rgba(201,168,76,0.45)';cx.lineWidth=r*.04;
+    cx.beginPath();cx.arc(x+r*.14,y-r*.07,r*.24,0.3,3.2);cx.stroke();
+    cx.beginPath();cx.arc(x+r*.07,y+r*.02,r*.34,0.5,3.0);cx.stroke();
+    cx.fillStyle=c;cx.beginPath();cx.arc(x+r*.55,y-r*.38,r*.11,0,Math.PI*2);cx.fill();cx.restore();
+  }},
+  {label:'Kalash',draw:(cx,x,y,r,c)=>{
+    cx.save();cx.fillStyle=c;
+    cx.fillRect(x-r*.44,y+r*.74,r*.88,r*.16);cx.fillRect(x-r*.3,y+r*.57,r*.6,r*.2);
+    cx.beginPath();cx.moveTo(x-r*.44,y+r*.57);cx.bezierCurveTo(x-r*.68,y,x-r*.56,y-r*.52,x-r*.32,y-r*.76);cx.lineTo(x+r*.32,y-r*.76);cx.bezierCurveTo(x+r*.56,y-r*.52,x+r*.68,y,x+r*.44,y+r*.57);cx.closePath();cx.fill();
+    cx.fillRect(x-r*.2,y-r*.76,r*.4,r*.14);
+    cx.fillStyle='#4CAF50';[-r*.2,0,r*.2].forEach(ox=>{cx.beginPath();cx.ellipse(x+ox,y-r*.86,r*.1,r*.26,0,0,Math.PI*2);cx.fill();});
+    cx.fillStyle='#8D6E63';cx.beginPath();cx.arc(x,y-r*1.1,r*.22,0,Math.PI*2);cx.fill();
+    cx.fillStyle=c;cx.beginPath();cx.arc(x,y-r*1.1,r*.14,0,Math.PI*2);cx.fill();cx.restore();
+  }},
+  {label:'Chakra',draw:(cx,x,y,r,c)=>{
+    cx.save();
+    for(let i=0;i<12;i++){cx.save();cx.translate(x,y);cx.rotate(i/12*Math.PI*2);const g=cx.createLinearGradient(0,r*.28,0,r*.68);g.addColorStop(0,c);g.addColorStop(1,'rgba(201,168,76,0.18)');cx.fillStyle=g;cx.beginPath();cx.moveTo(-r*.1,r*.28);cx.lineTo(0,r*.68);cx.lineTo(r*.1,r*.28);cx.closePath();cx.fill();cx.restore();}
+    cx.strokeStyle=c;cx.lineWidth=r*.07;cx.beginPath();cx.arc(x,y,r*.52,0,Math.PI*2);cx.stroke();
+    cx.lineWidth=r*.04;cx.beginPath();cx.arc(x,y,r*.3,0,Math.PI*2);cx.stroke();
+    cx.fillStyle=c;cx.beginPath();cx.arc(x,y,r*.14,0,Math.PI*2);cx.fill();cx.restore();
+  }},
 ];
 
-/* Theme definitions */
+/* ═══════════════════════════════════════════════
+   THEMES
+═══════════════════════════════════════════════ */
 const THEMES=[
-  {id:1,label:'Deep Red',c1:'#1a0008',c2:'#0d0004',c3:'#1a0a00',cs:['#1a0008','#0d0004','#1a0a00']},
-  {id:2,label:'Royal Navy',c1:'#0a0020',c2:'#050010',c3:'#0a0015',cs:['#0a0020','#050010','#0a0015']},
-  {id:3,label:'Forest',c1:'#001a00',c2:'#000d00',c3:'#001005',cs:['#001a00','#000d00','#001005']},
-  {id:4,label:'Amber',c1:'#1a1000',c2:'#0d0800',c3:'#1a1200',cs:['#1a1000','#0d0800','#1a1200']},
-  {id:5,label:'Black',c1:'#0a0a0a',c2:'#050505',c3:'#0f0f0f',cs:['#0a0a0a','#050505','#0f0f0f']},
-  {id:6,label:'Purple',c1:'#1a0a1a',c2:'#0a000a',c3:'#150015',cs:['#1a0a1a','#0a000a','#150015']},
+  {label:'Crimson',c1:'#1a0008',c2:'#0d0004',c3:'#1a0a00'},
+  {label:'Navy',c1:'#0a0020',c2:'#050010',c3:'#0a0015'},
+  {label:'Forest',c1:'#001a00',c2:'#000d00',c3:'#001005'},
+  {label:'Amber',c1:'#1a1000',c2:'#0d0800',c3:'#1a1200'},
+  {label:'Noir',c1:'#0a0a0a',c2:'#050505',c3:'#0f0f0f'},
+  {label:'Purple',c1:'#1a0a1a',c2:'#0a000a',c3:'#150015'},
 ];
 
-/* ══════ STATE ══════ */
-let posterBg=null, logoImg=null;
-let symIdx=0, themeIdx=0, festVal='ramnavami', sizeVal='portrait';
-
-/* ══════ SIZES ══════ */
-const SIZES={portrait:{w:600,h:800},square:{w:700,h:700},story:{w:540,h:960}};
-
-/* ══════ FESTIVALS ══════ */
+/* ═══════════════════════════════════════════════
+   FESTIVALS + OFFERS
+═══════════════════════════════════════════════ */
 const FESTS={
-  ramnavami:{hi:'श्री राम नवमी',en:'SRI RAM NAVAMI 2025',om:'ॐ',badge:'RAM NAVAMI SPECIAL',
-    tags:['जय श्री राम 🙏','Ram Navami ki Shubhkamnayein!','🏹 Jai Shree Ram – Special Offer!']},
-  diwali:{hi:'दीपावली की शुभकामनाएं',en:'HAPPY DIWALI 2025',om:'🪔',badge:'DIWALI SPECIAL',
-    tags:['दीपावली की हार्दिक शुभकामनाएं!','Diwali Special Offer!','🪔 Shubh Deepawali!']},
-  holi:{hi:'होली की शुभकामनाएं',en:'HAPPY HOLI 2025',om:'🎨',badge:'HOLI SPECIAL',
-    tags:['होली की रंगीन शुभकामनाएं!','Happy Holi – Special!','रंग दे बसंती 🎨']},
-  navratri:{hi:'नवरात्रि की शुभकामनाएं',en:'HAPPY NAVRATRI 2025',om:'🌸',badge:'NAVRATRI SPECIAL',
-    tags:['जय माता दी!','Navratri Special Offer!','🌸 Maa ki kripa bani rahe']},
-  eid:{hi:'ईद मुबारक',en:'EID MUBARAK 2025',om:'🌙',badge:'EID SPECIAL',
-    tags:['Eid Mubarak!','🌙 Eid ki Khushiyan!','Mubarak ho aapko Eid']},
+  ramnavami:{hi:'श्री राम नवमी',en:'SRI RAM NAVAMI 2026',om:'ॐ',badge:'RAM NAVAMI 2026',tags:['जय श्री राम 🙏','Ram Navami 2026 ki Shubhkamnayein!','🏹 Jai Shree Ram – Special Offer!','मर्यादा पुरुषोत्तम श्री राम की जय!','Ambikapur ka No.1 Choice – Navami 2026']},
+  diwali:{hi:'दीपावली की शुभकामनाएं',en:'HAPPY DIWALI 2026',om:'🪔',badge:'DIWALI 2026',tags:['दीपावली की हार्दिक शुभकामनाएं!','Diwali 2026 Maha Sale!','🪔 Shubh Deepawali 2026!','रोशनी का त्योहार – Special Offer','Ambikapur ki No.1 Diwali Choice']},
+  holi:{hi:'होली की शुभकामनाएं',en:'HAPPY HOLI 2026',om:'🎨',badge:'HOLI 2026',tags:['होली 2026 की रंगीन शुभकामनाएं!','Happy Holi 2026 – Special!','रंग दे बसंती 🎨','Holi Hai! Sarguja ka Best Offer','🌈 Rang Birangi Holi – 2026']},
+  navratri:{hi:'नवरात्रि की शुभकामनाएं',en:'NAVRATRI 2026',om:'🌸',badge:'NAVRATRI 2026',tags:['जय माता दी! 🙏','Navratri 2026 Special Offer!','🌸 Maa ki kripa sada bani rahe','नवरात्रि के नौ रंग – Special Deals','Ambikapur Navratri 2026 – Best Offers']},
+  eid:{hi:'ईद मुबारक',en:'EID MUBARAK 2026',om:'🌙',badge:'EID 2026',tags:['Eid Mubarak 2026! 🌙','🌙 Eid ki Khushiyan – Special Offer!','Mubarak ho Eid 2026!','Dil se Eid Mubarak – Ambikapur','Eid Special Deals – Sarguja 2026']},
 };
-
-/* ══════ OFFERS ══════ */
 const OFFERS={
-  jewellery:{names:['Pratham Jewellers','Ambika Jewellers','Soni Gold House','Sarguja Jewels'],offers:['नवमी स्पेशल – सभी आभूषणों पर Making Charge FREE!','Navami Special – 10% Off on all Gold & Silver!','हर ₹10,000 की खरीद पर ₹500 का Gift Voucher!'],tags:['Fine Jewellery • Ambikapur, Sarguja','सोने-चाँदी का बेहतरीन संग्रह','Trusted Jeweller – Ambikapur'],icon:1},
-  sweets:{names:['Shri Ram Sweets','Sarguja Sweets','Gupta Misthan Bhandar'],offers:['1 KG Mithai lo, 500g Prasad Pack FREE!','Navami Special Box – ₹299 mein premium sweets!','15% Discount on all items this Navami!'],tags:['ताज़ी & शुद्ध मिठाइयाँ','Home Delivery Available 🛵','Pure Desi Ghee Sweets'],icon:2},
-  clothing:{names:['Navrang Textiles','Sarguja Fashion','Ethnic India'],offers:['सभी Ethnic Wear & Sarees पर 15% छूट!','New Kurtis, Sarees & Lehengas in stock!','₹1000+ ki kharidi par FREE ethnic dupatta!'],tags:['Trendy Ethnic Wear – Ambikapur','Latest Designs • Best Price','नई कलेक्शन – Sarguja'],icon:4},
-  puja:{names:['Pooja Puja Bhandar','Sarguja Puja Center','Divya Puja Store'],offers:['Navami Special Puja Kit – ₹199 mein complete!','Complete Puja Samagri – Same Day Delivery!','₹500+ order par FREE Incense + Sindoor!'],tags:['Complete Puja Samagri – Ambikapur','Bhagwan ki Kripa Sada Bani Rahe 🙏','Idols • Agarbatti • Puja Items'],icon:2},
-  flowers:{names:['Fresh Flowers Hub','Sarguja Florist','Ambikapur Phool Bhandar'],offers:['Navami Decoration Kit – Marigold + items!','Fresh Flowers & Garlands – Same Day Delivery!','Phool-mala + Decoration Kit at ₹149 only!'],tags:['Fresh Flowers Daily 🌺','Decoration Services Available','Flowers • Garlands – Sarguja'],icon:4},
-  electronics:{names:['Digital Zone Ambikapur','Sarguja Electronics'],offers:['Navami Special – All Mobiles par 8% Off!','Exchange old phone – Best deal in Ambikapur!','Free Screen Guard + Cover this Navami!'],tags:['Best Electronics – Ambikapur','All Major Brands Available','Repairs • Sales – Sarguja'],icon:0},
-  restaurant:{names:['Sarguja Dhaba','Ambikapur Family Hotel'],offers:['Navami Special Thali – ₹99 mein full meal!','₹300+ order par 10% off + free dessert!','Navami Prasad Thali – Satvik & Pure Veg!'],tags:['Pure Veg • Satvik – Ambikapur','Home Delivery Available 🛵','Ghar jaisi taste!'],icon:4},
-  medical:{names:['Ambikapur Medical','Sarguja Pharmacy'],offers:['Navami Special – Vitamins par 12% Off!','Free Health Checkup Camp this Navami!','All medicines – Home delivery Ambikapur!'],tags:['Your Health, Our Priority','All Medicines Available','24/7 Service – Sarguja'],icon:0},
-  digital:{names:['ARC G15 Digital','Digital Print Zone'],offers:['Navami Special – Poster printing par 50% Off!','Ram Navami Design FREE with any print order!','Visiting Cards + Flex + Poster – Combo deal!'],tags:['Print • Design • Deliver – Ambikapur','Best Quality Printing in Sarguja','Your Brand, Our Design 🎨'],icon:0},
-  general:{names:['Sarguja General Store','Ambikapur Kirana'],offers:['Navami Special – ₹500+ ki kharidi par 10% Off!','Ram Navami Sale – Best deals today!','Khareedo aaj, bachao kal – Navami Special!'],tags:['Your Neighbourhood Store','Best Quality at Best Price','Sab milega yahan – Sarguja'],icon:0},
+  jewellery:{names:['Pratham Jewellers','Ambika Jewellers','Soni Gold House','Sarguja Jewels','Ambikapur Gold Palace'],offers:['नवमी 2026 – सभी आभूषणों पर Making Charge FREE!','Ram Navami 2026 – 10% Off on all Gold & Silver!','हर ₹10,000 की खरीद पर ₹500 का Gift Voucher!','Navami Special – Free gift wrapping + 5% extra off!','नई BIS Hallmark Jewellery – Navami 2026 Launch Offer!'],tags:['Fine Jewellery • Ambikapur, Sarguja','सोने-चाँदी का बेहतरीन संग्रह','Trusted Jeweller – Ambikapur','Hallmark Certified Gold – Since Years','आपका भरोसेमंद ज्वेलर – सरगुजा'],icon:0},
+  sweets:{names:['Shri Ram Sweets','Sarguja Sweets','Gupta Misthan Bhandar','Ram Navami Sweets House','Pure Ghee Mithai Bhandar'],offers:['1 KG Mithai lo, 500g Prasad Pack FREE!','Navami 2026 Special Box – ₹299 mein premium sweets!','Shudh Desi Ghee ki Mithai – 15% Discount!','Navami Thali + Mithai Combo – ₹199 only!','Bulk order ₹2000+ par FREE home delivery Ambikapur!'],tags:['ताज़ी & शुद्ध मिठाइयाँ – Ambikapur','Home Delivery Available 🛵','Pure Desi Ghee Sweets – Sarguja','Ambikapur ki Sabse Mashhoor Mithai','आर्डर करें: घर बैठे मीठा पाएं'],icon:3},
+  clothing:{names:['Navrang Textiles','Sarguja Fashion','Ethnic India','Ram Navami Collection House','Ambikapur Saree Center'],offers:['सभी Ethnic Wear & Sarees पर 15% छूट!','New Kurtis, Sarees & Lehengas in stock 2026!','₹1000+ kharidi par FREE ethnic dupatta!','Navami 2026 – Buy 2 Get 1 FREE on Kurtis!','Saree se Lehenga – Flat 20% Off on New Arrivals!'],tags:['Trendy Ethnic Wear – Ambikapur','Latest Designs • Best Price – 2026','नई कलेक्शन 2026 – Sarguja','Exclusive Ram Navami Collection','आपकी पसंद, हमारी कोशिश – Ambikapur'],icon:4},
+  puja:{names:['Pooja Puja Bhandar','Sarguja Puja Center','Divya Puja Store','Navami Puja Samagri','Jai Ram Puja Bhandar'],offers:['Navami 2026 Puja Kit – ₹199 mein complete!','Complete Puja Samagri – Same Day Delivery!','₹500+ order par FREE Incense + Sindoor!','Navami Special – Idols + Flowers + Samagri Combo!','Free Puja Guide booklet with every ₹300+ purchase!'],tags:['Complete Puja Samagri – Ambikapur','Bhagwan ki Kripa Sada Bani Rahe 🙏','Idols • Agarbatti • Puja Items – Sarguja','Ram Navami 2026 ka Sab Kuch Yahan','पूजा सामग्री • मूर्तियाँ • सजावट'],icon:2},
+  flowers:{names:['Fresh Flowers Hub','Sarguja Florist','Ambikapur Phool Bhandar','Ram Navami Flowers','Garden Fresh Ambikapur'],offers:['Navami 2026 Decoration Kit – Marigold + items!','Fresh Flowers & Garlands – Same Day Delivery!','Phool-mala + Decoration Kit ₹149 only!','Bulk Marigold Garlands – Best Price in Ambikapur!','Navami 2026 – Free delivery on orders above ₹200!'],tags:['Fresh Flowers Daily 🌺 – Ambikapur','Decoration Services Available – Sarguja','Flowers • Garlands • Decor – 2026','Ambikapur ka Sabse Fresh Phool Wala','रोज़ ताज़ा फूल • गेंदे की माला'],icon:4},
+  electronics:{names:['Digital Zone Ambikapur','Sarguja Electronics','TechMart Ambikapur','Smart Electronics Sarguja'],offers:['Navami 2026 – All Mobiles par 8% Off!','Exchange old phone – Best deal in Ambikapur!','Free Screen Guard + Cover this Navami 2026!','EMI available on all mobiles – 0% interest!','Navami 2026 – Accessories combo at half price!'],tags:['Best Electronics – Ambikapur','All Major Brands Available – 2026','Repairs • Sales • Accessories – Sarguja','EMI Available • Easy Exchange','Sarguja ka No.1 Electronics Store'],icon:0},
+  restaurant:{names:['Sarguja Dhaba','Ambikapur Family Hotel','Jai Ram Restaurant','Navami Bhoj Ambikapur'],offers:['Navami 2026 Special Thali – ₹99 mein!','₹300+ order par 10% off + free dessert!','Navami Prasad Thali – Pure Veg 2026!','Family Navami Meal for 4 – ₹349 only!','Online order karo – Free Raita + Papad with Thali!'],tags:['Pure Veg • Satvik – Ambikapur','Home Delivery Available 🛵 – Sarguja','Ghar jaisi taste – 2026','Family Restaurant • Ambikapur','Navami Special Veg Menu – Daily Fresh'],icon:4},
+  medical:{names:['Ambikapur Medical','Sarguja Pharmacy','Health Plus Ambikapur','Life Care Medical'],offers:['Navami 2026 – Vitamins & Supplements par 12% Off!','Free Health Checkup Camp this Navami 2026!','All branded medicines – Home delivery Ambikapur!','Senior citizen patients – Extra 5% discount always!','Navami 2026 – OTC products par flat 10% Off!'],tags:['Your Health, Our Priority – Ambikapur','All Medicines Available – 2026','24/7 Service – Sarguja','Trusted Pharmacy Since Years','Home Delivery Available • Ambikapur'],icon:0},
+  digital:{names:['ARC G15 Digital','Digital Print Zone','Creative Studio Ambikapur','Sarguja Print Hub'],offers:['Navami 2026 – Poster printing par 50% Off!','Ram Navami 2026 Poster Design FREE with print!','Visiting Cards + Flex + Poster – Combo deal!','Social Media Management – Navami 2026 Package!','GMB Setup + Instagram – Navami Special Bundle!'],tags:['Print • Design • Deliver – Ambikapur','Best Quality Printing in Sarguja – 2026','Your Brand, Our Design 🎨','Digital Marketing • Social Media • GMB','ARC G15 Digital – Ambikapur ka Digital Partner'],icon:0},
+  general:{names:['Sarguja General Store','Ambikapur Kirana','Ram Navami Super Store','Apna Bhandar Ambikapur'],offers:['Navami 2026 – ₹500+ kharidi par 10% Off!','Ram Navami 2026 Sale – Best deals today!','Khareedo aaj, bachao kal – Navami 2026!','Navami Special – Free home delivery ₹300+ orders!','Bulk purchase discount – Ask in store today!'],tags:['Your Neighbourhood Store – Ambikapur','Best Quality at Best Price – 2026','Sab milega yahan – Sarguja','Home Delivery • Ambikapur • Sarguja','Trusted Store Since Years – Ambikapur'],icon:0},
 };
 
-/* ══════ CANVAS MAIN ══════ */
-const CV=document.getElementById('poster');
-const CX=CV.getContext('2d');
+/* ═══════════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════════ */
+let posterBg=null,logoImg=null,symIdx=0,themeIdx=0,festVal='ramnavami',sizeVal='portrait';
+const SIZES={portrait:{w:600,h:800},square:{w:700,h:700},story:{w:540,h:960}};
+const CV=document.getElementById('poster');const CX=CV.getContext('2d');
 let W=600,H=800;
 
-function setSize(){const s=SIZES[sizeVal];W=s.w;H=s.h;CV.width=W;CV.height=H;}
-
-/* ══════ BUILD UI ══════ */
+/* ═══════════════════════════════════════════════
+   BUILD UI
+═══════════════════════════════════════════════ */
 function buildSymGrid(){
-  const g=document.getElementById('symGrid');
-  g.innerHTML='';
-  SYMBOLS.forEach((sym,i)=>{
-    const btn=document.createElement('button');
-    btn.className='sym-btn'+(i===0?' on':'');
+  const g=document.getElementById('symGrid');g.innerHTML='';
+  SYMS.forEach((s,i)=>{
+    const btn=document.createElement('button');btn.className='sym-btn'+(i===0?' on':'');
     btn.onclick=()=>{symIdx=i;document.querySelectorAll('.sym-btn').forEach(b=>b.classList.remove('on'));btn.classList.add('on');render();};
-    const cv=document.createElement('canvas');
-    cv.width=52;cv.height=52;
-    const ctx2=cv.getContext('2d');
-    sym.draw(ctx2,26,26,22,'#C9A84C');
-    const sp=document.createElement('span');sp.textContent=sym.label;
-    btn.appendChild(cv);btn.appendChild(sp);
-    g.appendChild(btn);
+    const cv=document.createElement('canvas');cv.width=48;cv.height=48;
+    const cx2=cv.getContext('2d');s.draw(cx2,24,24,18,GOLD);
+    const sp=document.createElement('span');sp.textContent=s.label;
+    btn.appendChild(cv);btn.appendChild(sp);g.appendChild(btn);
   });
 }
-
 function buildThemeGrid(){
-  const g=document.getElementById('thGrid');
-  g.innerHTML='';
+  const g=document.getElementById('themeGrid');g.innerHTML='';
   THEMES.forEach((t,i)=>{
-    const btn=document.createElement('button');
-    btn.className='th-btn'+(i===0?' on':'');
-    btn.setAttribute('data-label',t.label);
-    btn.title=t.label;
-    // Draw gradient preview
+    const btn=document.createElement('button');btn.className='theme-btn'+(i===0?' on':'');btn.title=t.label;
     const cv=document.createElement('canvas');cv.width=44;cv.height=44;
-    const ctx2=cv.getContext('2d');
-    const g2=ctx2.createLinearGradient(0,0,44,44);
-    t.cs.forEach((c,ci)=>g2.addColorStop(ci/(t.cs.length-1),c));
-    ctx2.fillStyle=g2;ctx2.fillRect(0,0,44,44);
-    // Gold stripe
-    ctx2.fillStyle='rgba(201,168,76,0.4)';ctx2.fillRect(0,36,44,8);
+    const cx2=cv.getContext('2d');
+    const grad=cx2.createLinearGradient(0,0,44,44);
+    grad.addColorStop(0,t.c1);grad.addColorStop(.5,t.c2);grad.addColorStop(1,t.c3);
+    cx2.fillStyle=grad;cx2.fillRect(0,0,44,44);
+    cx2.fillStyle='rgba(201,168,76,0.35)';cx2.fillRect(0,36,44,8);
     btn.appendChild(cv);
-    btn.onclick=()=>{
-      themeIdx=i;
-      document.querySelectorAll('.th-btn').forEach(b=>b.classList.remove('on'));
-      btn.classList.add('on');
-      render();
-      toast('🎨 Theme: '+t.label);
-    };
+    btn.onclick=()=>{themeIdx=i;document.querySelectorAll('.theme-btn').forEach(b=>b.classList.remove('on'));btn.classList.add('on');render();toast('🎨 Theme: '+t.label);};
     g.appendChild(btn);
   });
 }
 
-/* ══════ RENDER ══════ */
+/* ═══════════════════════════════════════════════
+   CANVAS POSTER RENDER
+═══════════════════════════════════════════════ */
 function render(){
   CX.clearRect(0,0,W,H);
-  const t=THEMES[themeIdx];
-  const fest=FESTS[festVal];
+  const t=THEMES[themeIdx],fest=FESTS[festVal];
   const name=document.getElementById('shopName').value||'YOUR SHOP NAME';
-  const offer=document.getElementById('offerTxt').value||'Special Navami Offer!';
+  const offer=document.getElementById('offerTxt').value||'Special Ram Navami 2026 Offer!';
   const phone=document.getElementById('phone').value||'— Phone Number —';
   const addr=document.getElementById('addr').value||'Ambikapur, Sarguja';
   const tag=document.getElementById('tagline').value||'';
-  const GOLD='#C9A84C', GOLDL='#F0D080', GOLDP='#FDE99A';
 
-  /* BG */
+  // BG
   if(posterBg){
-    const sc=Math.max(W/posterBg.width,H/posterBg.height);
-    const dw=posterBg.width*sc,dh=posterBg.height*sc;
+    const sc=Math.max(W/posterBg.width,H/posterBg.height);const dw=posterBg.width*sc,dh=posterBg.height*sc;
     CX.drawImage(posterBg,(W-dw)/2,(H-dh)/2,dw,dh);
     CX.fillStyle='rgba(0,0,0,0.65)';CX.fillRect(0,0,W,H);
   } else {
-    const bg=CX.createLinearGradient(0,0,W,H);
-    bg.addColorStop(0,t.c1);bg.addColorStop(.5,t.c2);bg.addColorStop(1,t.c3);
+    const bg=CX.createLinearGradient(0,0,W,H);bg.addColorStop(0,t.c1);bg.addColorStop(.5,t.c2);bg.addColorStop(1,t.c3);
     CX.fillStyle=bg;CX.fillRect(0,0,W,H);
-    // Ambient glow
-    const rg=CX.createRadialGradient(W/2,H*.35,10,W/2,H*.35,W*.5);
-    rg.addColorStop(0,'rgba(201,168,76,0.10)');rg.addColorStop(1,'transparent');
+    const rg=CX.createRadialGradient(W/2,H*.35,10,W/2,H*.35,W*.5);rg.addColorStop(0,'rgba(201,168,76,0.11)');rg.addColorStop(1,'transparent');
     CX.fillStyle=rg;CX.fillRect(0,0,W,H);
   }
-
-  /* MANDALA */
   dMandala(W/2,H/2,Math.min(W,H)*.44,.055);
+  dBorders();
+  dCorners();
 
-  /* BORDERS */
-  dBorder(4,5,['#7B5A0A',GOLD,GOLDL,GOLD,'#7B5A0A']);
-  dBorder(17,1,['rgba(201,168,76,0.1)','rgba(201,168,76,0.25)','rgba(201,168,76,0.1)']);
+  const Z={omY:H*.076,l1:H*.112,titY:H*.163,enY:H*.207,stY:H*.236,archCY:H*.395,archRX:W*.31,archRY:H*.205,stripY:H*.528,stripH:H*.07,boxY:H*.612,boxH:H*.215,footY:H*.847};
 
-  /* CORNERS */
-  const co=26;[[co,co,0],[W-co,co,Math.PI/2],[W-co,H-co,Math.PI],[co,H-co,-Math.PI/2]].forEach(([x,y,a])=>dCorner(x,y,a));
+  // OM
+  CX.save();CX.font=`bold ${Math.round(H*.044)}px serif`;CX.textAlign='center';CX.textBaseline='middle';
+  CX.fillStyle=GOLD;CX.shadowColor='rgba(201,168,76,0.9)';CX.shadowBlur=H*.025;CX.fillText(fest.om,W/2,Z.omY);CX.restore();
+  dLine(W/2,Z.l1,W*.3);
 
-  /* PROPORTIONAL LAYOUT */
-  const Z={
-    omY:H*.075, line1:H*.11,
-    titleY:H*.162, enY:H*.205, starsY:H*.234,
-    archCY:H*.395, archRX:W*.31, archRY:H*.205,
-    stripY:H*.527, stripH:H*.07,
-    boxY:H*.610, boxH:H*.213,
-    footY:H*.845,
-  };
+  CX.save();CX.font=`bold ${Math.round(H*.062)}px "Tiro Devanagari Hindi",serif`;CX.textAlign='center';CX.textBaseline='middle';
+  CX.fillStyle=GOLDL;CX.shadowColor='rgba(240,208,128,0.7)';CX.shadowBlur=H*.025;CX.fillText(fest.hi,W/2,Z.titY);CX.restore();
 
-  /* OM */
-  CX.save();CX.fillStyle=GOLD;CX.shadowColor='rgba(201,168,76,0.9)';CX.shadowBlur=H*.025;
-  CX.font=`bold ${Math.round(H*.044)}px serif`;CX.textAlign='center';CX.textBaseline='middle';
-  CX.fillText(fest.om,W/2,Z.omY);CX.restore();
-  dLine(W/2,Z.line1,W*.3);
+  CX.save();CX.font=`${Math.round(H*.016)}px Cinzel,serif`;CX.textAlign='center';CX.textBaseline='middle';CX.fillStyle='rgba(201,168,76,0.62)';CX.fillText(fest.en,W/2,Z.enY);CX.restore();
+  CX.save();CX.font=`${Math.round(H*.014)}px serif`;CX.textAlign='center';CX.textBaseline='middle';CX.fillStyle='rgba(201,168,76,0.48)';CX.fillText('✦  ·  ✦  ·  ✦  ·  ✦  ·  ✦',W/2,Z.stY);CX.restore();
 
-  /* TITLE */
-  CX.save();CX.fillStyle=GOLDL;CX.shadowColor='rgba(240,208,128,0.7)';CX.shadowBlur=H*.025;
-  CX.font=`bold ${Math.round(H*.062)}px "Tiro Devanagari Hindi",serif`;
-  CX.textAlign='center';CX.textBaseline='middle';CX.fillText(fest.hi,W/2,Z.titleY);CX.restore();
-
-  CX.save();CX.fillStyle='rgba(201,168,76,0.62)';
-  CX.font=`${Math.round(H*.015)}px Cinzel,serif`;
-  CX.textAlign='center';CX.textBaseline='middle';CX.fillText(fest.en,W/2,Z.enY);CX.restore();
-
-  CX.save();CX.fillStyle='rgba(201,168,76,0.48)';
-  CX.font=`${Math.round(H*.014)}px serif`;
-  CX.textAlign='center';CX.textBaseline='middle';
-  CX.fillText('✦  ·  ✦  ·  ✦  ·  ✦  ·  ✦',W/2,Z.starsY);CX.restore();
-
-  /* ARCH */
   dArch(W/2,Z.archCY+Z.archRY*.5,Z.archRX,Z.archRY);
-
-  /* GLOW */
-  const gc=CX.createRadialGradient(W/2,Z.archCY,10,W/2,Z.archCY,Z.archRY*.9);
-  gc.addColorStop(0,'rgba(255,180,30,0.20)');gc.addColorStop(.55,'rgba(201,168,76,0.06)');gc.addColorStop(1,'transparent');
+  const gc=CX.createRadialGradient(W/2,Z.archCY,10,W/2,Z.archCY,Z.archRY*.9);gc.addColorStop(0,'rgba(255,180,30,0.2)');gc.addColorStop(.55,'rgba(201,168,76,0.06)');gc.addColorStop(1,'transparent');
   CX.fillStyle=gc;CX.beginPath();CX.arc(W/2,Z.archCY,Z.archRY*.9,0,Math.PI*2);CX.fill();
 
-  /* CENTER SYMBOL – canvas drawn! */
-  const symR = Math.min(W,H)*.115;
-  SYMBOLS[symIdx].draw(CX, W/2, Z.archCY, symR, GOLDL);
+  // Symbol
+  SYMS[symIdx].draw(CX,W/2,Z.archCY,Math.min(W,H)*.115,GOLDL);
 
-  /* JEWEL STRIP – drawn shapes instead of emojis */
+  // Jewel strip
   const sy=Z.stripY,sh=Z.stripH;
   CX.fillStyle='rgba(201,168,76,0.07)';CX.fillRect(0,sy,W,sh);
   dLine(W/2,sy,W/2);dLine(W/2,sy+sh,W/2);
-  // Draw 5 gold diamond shapes
-  const gdw=sh*.35,gdh=sh*.45;
   const gsx=W/2-W*.18*2;
-  for(let i=0;i<5;i++){
-    const gx=gsx+i*W*.18,gy=sy+sh/2;
-    if(i%2===0){
-      // Diamond
-      CX.fillStyle=i===2?GOLDL:GOLD;
-      CX.beginPath();CX.moveTo(gx,gy-gdh);CX.lineTo(gx+gdw,gy);CX.lineTo(gx,gy+gdh*.6);CX.lineTo(gx-gdw,gy);CX.closePath();CX.fill();
-    } else {
-      // Circle bead
-      CX.fillStyle='rgba(201,168,76,0.6)';
-      CX.beginPath();CX.arc(gx,gy,sh*.18,0,Math.PI*2);CX.fill();
-      CX.fillStyle='rgba(201,168,76,0.3)';
-      CX.beginPath();CX.arc(gx,gy,sh*.1,0,Math.PI*2);CX.fill();
-    }
+  for(let i=0;i<5;i++){const gx=gsx+i*W*.18,gy=sy+sh/2,gdw=sh*.32,gdh=sh*.42;
+    if(i%2===0){CX.fillStyle=i===2?GOLDL:GOLD;CX.beginPath();CX.moveTo(gx,gy-gdh);CX.lineTo(gx+gdw,gy);CX.lineTo(gx,gy+gdh*.55);CX.lineTo(gx-gdw,gy);CX.closePath();CX.fill();}
+    else{CX.fillStyle='rgba(201,168,76,0.55)';CX.beginPath();CX.arc(gx,gy,sh*.16,0,Math.PI*2);CX.fill();}
   }
 
-  /* OFFER BOX */
-  const bx=W*.075,by=Z.boxY,bw=W*.85,bh=Z.boxH;
-  CX.save();
-  // Gradient fill
-  const boxG=CX.createLinearGradient(bx,by,bx+bw,by+bh);
-  boxG.addColorStop(0,'rgba(100,0,0,0.55)');boxG.addColorStop(1,'rgba(60,0,30,0.55)');
-  CX.fillStyle=boxG;dRRect(CX,bx,by,bw,bh,6);CX.fill();
-  // Gold border
-  const boxB=CX.createLinearGradient(bx,by,bx+bw,by);
-  boxB.addColorStop(0,'rgba(201,168,76,0.3)');boxB.addColorStop(.5,'rgba(240,208,128,0.7)');boxB.addColorStop(1,'rgba(201,168,76,0.3)');
-  CX.strokeStyle=boxB;CX.lineWidth=1.5;dRRect(CX,bx,by,bw,bh,6);CX.stroke();
-  CX.restore();
+  // Offer box
+  const bx=W*.074,by=Z.boxY,bw=W*.852,bh=Z.boxH;
+  const boxG=CX.createLinearGradient(bx,by,bx+bw,by+bh);boxG.addColorStop(0,'rgba(100,0,0,0.52)');boxG.addColorStop(1,'rgba(60,0,30,0.52)');
+  CX.save();CX.fillStyle=boxG;dRRect(CX,bx,by,bw,bh,6);CX.fill();
+  const boxB=CX.createLinearGradient(bx,by,bx+bw,by);boxB.addColorStop(0,'rgba(201,168,76,0.28)');boxB.addColorStop(.5,'rgba(240,208,128,0.68)');boxB.addColorStop(1,'rgba(201,168,76,0.28)');
+  CX.strokeStyle=boxB;CX.lineWidth=1.5;dRRect(CX,bx,by,bw,bh,6);CX.stroke();CX.restore();
 
-  // Badge
-  CX.save();CX.textAlign='center';CX.textBaseline='middle';
-  CX.fillStyle=GOLDL;CX.font=`bold ${Math.round(H*.013)}px Cinzel,serif`;
-  CX.fillText('✦  '+fest.badge+'  ✦',W/2,by+bh*.12);CX.restore();
+  CX.save();CX.textAlign='center';CX.textBaseline='middle';CX.fillStyle=GOLDL;CX.font=`bold ${Math.round(H*.013)}px Cinzel,serif`;CX.fillText('✦  '+fest.badge+'  ✦',W/2,by+bh*.12);CX.restore();
   dLine(W/2,by+bh*.23,bw*.52);
 
-  // Shop name (auto-shrink)
-  CX.save();CX.textAlign='center';CX.textBaseline='middle';
-  let ns=Math.round(H*.032);
-  CX.font=`bold ${ns}px Cinzel,serif`;CX.fillStyle=GOLDP;
-  CX.shadowColor='rgba(201,168,76,0.5)';CX.shadowBlur=12;
-  const nameStr=name.toUpperCase();
-  while(CX.measureText(nameStr).width>bw-40&&ns>12){ns--;CX.font=`bold ${ns}px Cinzel,serif`;}
-  CX.fillText(nameStr,W/2,by+bh*.41);CX.restore();
+  CX.save();CX.textAlign='center';CX.textBaseline='middle';let ns=Math.round(H*.032);CX.font=`bold ${ns}px Cinzel,serif`;CX.fillStyle=GOLDP;CX.shadowColor='rgba(201,168,76,0.5)';CX.shadowBlur=12;
+  const nm=name.toUpperCase();while(CX.measureText(nm).width>bw-40&&ns>11){ns--;CX.font=`bold ${ns}px Cinzel,serif`;}CX.fillText(nm,W/2,by+bh*.41);CX.restore();
 
-  // Tagline
-  if(tag){
-    CX.save();CX.textAlign='center';CX.textBaseline='middle';
-    CX.fillStyle='rgba(240,208,128,0.56)';CX.font=`${Math.round(H*.016)}px Poppins,sans-serif`;
-    const tl=tag.length>44?tag.substring(0,44)+'…':tag;
-    CX.fillText(tl,W/2,by+bh*.56);CX.restore();
-  }
+  if(tag){CX.save();CX.textAlign='center';CX.textBaseline='middle';CX.fillStyle='rgba(240,208,128,0.56)';CX.font=`${Math.round(H*.016)}px Inter,sans-serif`;CX.fillText(tag.length>44?tag.substring(0,44)+'…':tag,W/2,by+bh*.56);CX.restore();}
 
-  // Offer text (wrapped)
-  CX.save();CX.textAlign='center';CX.textBaseline='top';
-  CX.fillStyle='#FDF6E3';CX.font=`${Math.round(H*.018)}px "Tiro Devanagari Hindi",serif`;
-  wrapTxt(offer,W/2,by+bh*(tag?.66:.55),bw-52,Math.round(H*.025),3);CX.restore();
+  CX.save();CX.textAlign='center';CX.textBaseline='top';CX.fillStyle='#FDF6E3';CX.font=`${Math.round(H*.018)}px "Tiro Devanagari Hindi",serif`;
+  wrapTxt(offer,W/2,by+bh*(tag?.66:.55),bw-52,Math.round(H*.026),3);CX.restore();
 
-  /* FOOTER */
+  // Footer
   dLine(W/2,Z.footY,W*.56);
-  if(addr){
-    CX.save();CX.textAlign='center';CX.textBaseline='middle';
-    CX.fillStyle='rgba(240,208,128,0.48)';CX.font=`${Math.round(H*.015)}px Poppins,sans-serif`;
-    CX.fillText('📍  '+(addr.length>44?addr.substring(0,44)+'…':addr),W/2,Z.footY+H*.03);CX.restore();
+  if(addr){CX.save();CX.textAlign='center';CX.textBaseline='middle';CX.fillStyle='rgba(240,208,128,0.48)';CX.font=`${Math.round(H*.015)}px Inter,sans-serif`;CX.fillText('📍  '+(addr.length>44?addr.substring(0,44)+'…':addr),W/2,Z.footY+H*.03);CX.restore();}
+  CX.save();CX.textAlign='center';CX.textBaseline='middle';CX.fillStyle=GOLD;CX.shadowColor='rgba(201,168,76,0.35)';CX.shadowBlur=7;CX.font=`bold ${Math.round(H*.02)}px Cinzel,serif`;CX.fillText('📞  '+phone,W/2,Z.footY+H*(addr?.068:.036));CX.restore();
+
+  if(logoImg){const ls=H*.07,lx=W-W*.076-ls,ly=by+bh*.06;CX.save();CX.beginPath();CX.arc(lx+ls/2,ly+ls/2,ls/2,0,Math.PI*2);CX.strokeStyle='rgba(201,168,76,0.6)';CX.lineWidth=1.5;CX.stroke();CX.clip();CX.drawImage(logoImg,lx,ly,ls,ls);CX.restore();}
+  CX.save();CX.textAlign='center';CX.textBaseline='bottom';CX.fillStyle='rgba(201,168,76,0.26)';CX.font=`${Math.round(H*.011)}px Inter,sans-serif`;CX.fillText('Powered by ARC G15 Digital  •  Ambikapur, Sarguja  •  2026',W/2,H-7);CX.restore();
+}
+
+/* canvas helpers */
+function dMandala(cx,cy,r,op){CX.save();CX.strokeStyle=`rgba(201,168,76,${op})`;CX.lineWidth=0.8;[1,.84,.68,.52,.36,.22].forEach(f=>{CX.beginPath();CX.arc(cx,cy,r*f,0,Math.PI*2);CX.stroke();});for(let i=0;i<8;i++){const a=i/8*Math.PI*2;CX.beginPath();CX.moveTo(cx+Math.cos(a)*r*.14,cy+Math.sin(a)*r*.14);CX.lineTo(cx+Math.cos(a)*r,cy+Math.sin(a)*r);CX.stroke();}[0,22.5,45,67.5].forEach(d=>{const a=d*Math.PI/180;CX.save();CX.translate(cx,cy);CX.rotate(a);CX.beginPath();CX.ellipse(0,0,r,r*.3,0,0,Math.PI*2);CX.stroke();CX.restore();});CX.restore();}
+function dBorders(){const g=CX.createLinearGradient(0,0,W,H);['#7B5A0A',GOLD,GOLDL,GOLD,'#7B5A0A'].forEach((c,i)=>g.addColorStop(i/4,c));CX.save();CX.strokeStyle=g;CX.lineWidth=5;CX.strokeRect(5,5,W-10,H-10);CX.restore();CX.save();CX.strokeStyle='rgba(201,168,76,0.14)';CX.lineWidth=1;CX.strokeRect(18,18,W-36,H-36);CX.restore();}
+function dCorners(){const sz=Math.min(W,H)*.037;[[28,28,0],[W-28,28,Math.PI/2],[W-28,H-28,Math.PI],[28,H-28,-Math.PI/2]].forEach(([x,y,a])=>{CX.save();CX.translate(x,y);CX.rotate(a);CX.strokeStyle='rgba(201,168,76,0.7)';CX.lineWidth=1;CX.beginPath();CX.moveTo(-sz,0);CX.lineTo(-sz,-sz);CX.lineTo(0,-sz);CX.stroke();CX.fillStyle='rgba(201,168,76,0.55)';CX.beginPath();CX.arc(-sz,-sz,sz*.17,0,Math.PI*2);CX.fill();CX.strokeStyle='rgba(201,168,76,0.26)';CX.lineWidth=.7;CX.beginPath();CX.moveTo(-sz*.6,0);CX.lineTo(-sz*.6,-sz*.6);CX.lineTo(0,-sz*.6);CX.stroke();CX.restore();});}
+function dLine(cx,y,h){const g=CX.createLinearGradient(cx-h,y,cx+h,y);g.addColorStop(0,'transparent');g.addColorStop(.35,GOLD);g.addColorStop(.5,GOLDL);g.addColorStop(.65,GOLD);g.addColorStop(1,'transparent');CX.save();CX.strokeStyle=g;CX.lineWidth=1;CX.beginPath();CX.moveTo(cx-h,y);CX.lineTo(cx+h,y);CX.stroke();CX.restore();}
+function dArch(cx,cy,rx,ry){CX.save();CX.strokeStyle='rgba(201,168,76,0.34)';CX.lineWidth=1.2;CX.beginPath();CX.ellipse(cx,cy,rx,ry,0,Math.PI,0);CX.stroke();CX.strokeStyle='rgba(201,168,76,0.13)';CX.lineWidth=.8;CX.beginPath();CX.ellipse(cx,cy,rx-13,ry-13,0,Math.PI,0);CX.stroke();CX.restore();}
+function dRRect(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.lineTo(x+w-r,y);ctx.arcTo(x+w,y,x+w,y+r,r);ctx.lineTo(x+w,y+h-r);ctx.arcTo(x+w,y+h,x+w-r,y+h,r);ctx.lineTo(x+r,y+h);ctx.arcTo(x,y+h,x,y+h-r,r);ctx.lineTo(x,y+r);ctx.arcTo(x,y,x+r,y,r);ctx.closePath();}
+function wrapTxt(txt,cx,y,maxW,lh,max){const words=txt.split(' ');let lines=[],line='';for(const w of words){const t=line?line+' '+w:w;if(CX.measureText(t).width>maxW&&line){lines.push(line);line=w;if(lines.length>=max)break;}else line=t;}if(line&&lines.length<max)lines.push(line);lines.forEach((l,i)=>CX.fillText(l,cx,y+i*lh));}
+
+/* ═══════════════════════════════════════════════
+   WISHES SECTION – 5 STYLES
+═══════════════════════════════════════════════ */
+// Shared wish helpers
+function wMandala(cx,X,Y,R,op){cx.save();cx.strokeStyle=`rgba(201,168,76,${op})`;cx.lineWidth=0.8;[1,.84,.68,.52,.36,.22].forEach(f=>{cx.beginPath();cx.arc(X,Y,R*f,0,Math.PI*2);cx.stroke();});for(let i=0;i<8;i++){const a=i/8*Math.PI*2;cx.beginPath();cx.moveTo(X+Math.cos(a)*R*.14,Y+Math.sin(a)*R*.14);cx.lineTo(X+Math.cos(a)*R,Y+Math.sin(a)*R);cx.stroke();}[0,22.5,45,67.5].forEach(d=>{const a=d*Math.PI/180;cx.save();cx.translate(X,Y);cx.rotate(a);cx.beginPath();cx.ellipse(0,0,R,R*.3,0,0,Math.PI*2);cx.stroke();cx.restore();});cx.restore();}
+function wBorders(cx,W,H,c1,c2){cx.save();const g=cx.createLinearGradient(0,0,W,H);g.addColorStop(0,GD);g.addColorStop(.25,GOLD);g.addColorStop(.5,GOLDL);g.addColorStop(.75,GOLD);g.addColorStop(1,GD);cx.strokeStyle=g;cx.lineWidth=5;cx.strokeRect(5,5,W-10,H-10);cx.restore();cx.save();cx.strokeStyle='rgba(201,168,76,0.18)';cx.lineWidth=1;cx.strokeRect(18,18,W-36,H-36);cx.restore();}
+function wCorners(cx,W,H){const sz=W*.038;[[28,28,0],[W-28,28,Math.PI/2],[W-28,H-28,Math.PI],[28,H-28,-Math.PI/2]].forEach(([x,y,a])=>{cx.save();cx.translate(x,y);cx.rotate(a);cx.strokeStyle='rgba(201,168,76,0.7)';cx.lineWidth=1;cx.beginPath();cx.moveTo(-sz,0);cx.lineTo(-sz,-sz);cx.lineTo(0,-sz);cx.stroke();cx.fillStyle='rgba(201,168,76,0.56)';cx.beginPath();cx.arc(-sz,-sz,sz*.17,0,Math.PI*2);cx.fill();cx.strokeStyle='rgba(201,168,76,0.26)';cx.lineWidth=.7;cx.beginPath();cx.moveTo(-sz*.6,0);cx.lineTo(-sz*.6,-sz*.6);cx.lineTo(0,-sz*.6);cx.stroke();cx.restore();});}
+function wLine(cx,X,Y,H){const g=cx.createLinearGradient(X-H,Y,X+H,Y);g.addColorStop(0,'transparent');g.addColorStop(.35,GOLD);g.addColorStop(.5,GOLDL);g.addColorStop(.65,GOLD);g.addColorStop(1,'transparent');cx.save();cx.strokeStyle=g;cx.lineWidth=1;cx.beginPath();cx.moveTo(X-H,Y);cx.lineTo(X+H,Y);cx.stroke();cx.restore();}
+function wMark(cx,W,H){cx.save();cx.textAlign='center';cx.textBaseline='bottom';cx.fillStyle='rgba(201,168,76,0.25)';cx.font=`${W*.011}px Inter,sans-serif`;cx.fillText('ARC G15 Digital  •  Ambikapur, Sarguja  •  2026',W/2,H-7);cx.restore();}
+function wSender(cx,W,Y,sender,tag){
+  // Draw wish tagline
+  if(tag){
+    wLine(cx,W/2,Y,W*.38);
+    cx.save();cx.font=`${W*.028}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';
+    cx.fillStyle='rgba(253,246,227,.82)';cx.fillText(tag.length>42?tag.substring(0,42)+'…':tag,W/2,Y+W*.038);cx.restore();
+    Y+=W*.07;
   }
-  CX.save();CX.textAlign='center';CX.textBaseline='middle';
-  CX.fillStyle=GOLD;CX.shadowColor='rgba(201,168,76,0.35)';CX.shadowBlur=7;
-  CX.font=`bold ${Math.round(H*.02)}px Cinzel,serif`;
-  CX.fillText('📞  '+phone,W/2,Z.footY+H*(addr?.068:.036));CX.restore();
-
-  if(logoImg){
-    const ls=H*.07,lx=W-W*.076-ls,ly=by+bh*.06;
-    CX.save();CX.beginPath();CX.arc(lx+ls/2,ly+ls/2,ls/2,0,Math.PI*2);
-    CX.strokeStyle='rgba(201,168,76,0.6)';CX.lineWidth=1.5;CX.stroke();CX.clip();
-    CX.drawImage(logoImg,lx,ly,ls,ls);CX.restore();
-  }
-
-  CX.save();CX.textAlign='center';CX.textBaseline='bottom';
-  CX.fillStyle='rgba(201,168,76,0.26)';CX.font=`${Math.round(H*.011)}px Poppins,sans-serif`;
-  CX.fillText('Powered by ARC G15 Digital  •  Ambikapur, Sarguja',W/2,H-7);CX.restore();
+  if(!sender)return;
+  wLine(cx,W/2,Y,W*.26);
+  cx.save();cx.font=`600 ${W*.026}px Cinzel,serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=GOLD;cx.fillText('— '+sender+' —',W/2,Y+W*.04);cx.restore();
 }
 
-/* ── Canvas Helpers ── */
-function dMandala(cx,cy,r,op){
-  CX.save();CX.strokeStyle=`rgba(201,168,76,${op})`;CX.lineWidth=0.8;
-  [1,.84,.68,.52,.36,.22].forEach(f=>{CX.beginPath();CX.arc(cx,cy,r*f,0,Math.PI*2);CX.stroke();});
-  for(let i=0;i<8;i++){const a=i/8*Math.PI*2;CX.beginPath();CX.moveTo(cx+Math.cos(a)*r*.14,cy+Math.sin(a)*r*.14);CX.lineTo(cx+Math.cos(a)*r,cy+Math.sin(a)*r);CX.stroke();}
-  [0,22.5,45,67.5].forEach(d=>{const a=d*Math.PI/180;CX.save();CX.translate(cx,cy);CX.rotate(a);CX.beginPath();CX.ellipse(0,0,r,r*.3,0,0,Math.PI*2);CX.stroke();CX.restore();});
-  CX.restore();
-}
-function dBorder(off,lw,stops){
-  const g=CX.createLinearGradient(0,0,W,H);stops.forEach((c,i)=>g.addColorStop(i/(stops.length-1),c));
-  CX.save();CX.strokeStyle=g;CX.lineWidth=lw;CX.strokeRect(off,off,W-2*off,H-2*off);CX.restore();
-}
-function dCorner(x,y,angle){
-  const sz=Math.min(W,H)*.037;
-  CX.save();CX.translate(x,y);CX.rotate(angle);
-  CX.strokeStyle='rgba(201,168,76,0.7)';CX.lineWidth=1;
-  CX.beginPath();CX.moveTo(-sz,0);CX.lineTo(-sz,-sz);CX.lineTo(0,-sz);CX.stroke();
-  CX.fillStyle='rgba(201,168,76,0.55)';CX.beginPath();CX.arc(-sz,-sz,sz*.17,0,Math.PI*2);CX.fill();
-  CX.strokeStyle='rgba(201,168,76,0.28)';CX.lineWidth=.7;
-  CX.beginPath();CX.moveTo(-sz*.6,0);CX.lineTo(-sz*.6,-sz*.6);CX.lineTo(0,-sz*.6);CX.stroke();
-  CX.restore();
-}
-function dLine(cx,y,half){
-  const g=CX.createLinearGradient(cx-half,y,cx+half,y);
-  g.addColorStop(0,'transparent');g.addColorStop(.35,'#C9A84C');g.addColorStop(.5,'#F0D080');g.addColorStop(.65,'#C9A84C');g.addColorStop(1,'transparent');
-  CX.save();CX.strokeStyle=g;CX.lineWidth=1;CX.beginPath();CX.moveTo(cx-half,y);CX.lineTo(cx+half,y);CX.stroke();CX.restore();
-}
-function dArch(cx,cy,rx,ry){
-  CX.save();CX.strokeStyle='rgba(201,168,76,0.35)';CX.lineWidth=1.2;
-  CX.beginPath();CX.ellipse(cx,cy,rx,ry,0,Math.PI,0);CX.stroke();
-  CX.strokeStyle='rgba(201,168,76,0.14)';CX.lineWidth=.8;
-  CX.beginPath();CX.ellipse(cx,cy,rx-12,ry-12,0,Math.PI,0);CX.stroke();
-  CX.restore();
-}
-function dRRect(ctx,x,y,w,h,r){
-  ctx.beginPath();ctx.moveTo(x+r,y);ctx.lineTo(x+w-r,y);ctx.arcTo(x+w,y,x+w,y+r,r);
-  ctx.lineTo(x+w,y+h-r);ctx.arcTo(x+w,y+h,x+w-r,y+h,r);ctx.lineTo(x+r,y+h);
-  ctx.arcTo(x,y+h,x,y+h-r,r);ctx.lineTo(x,y+r);ctx.arcTo(x,y,x+r,y,r);ctx.closePath();
-}
-function wrapTxt(txt,cx,y,maxW,lh,max){
-  const words=txt.split(' ');let lines=[],line='';
-  for(const w of words){const t=line?line+' '+w:w;if(CX.measureText(t).width>maxW&&line){lines.push(line);line=w;if(lines.length>=max)break;}else line=t;}
-  if(line&&lines.length<max)lines.push(line);
-  lines.forEach((l,i)=>CX.fillText(l,cx,y+i*lh));
-}
+// Draw functions for wish symbols
+function drawBow2(cx,X,Y,R,c){cx.save();cx.strokeStyle=c;cx.lineWidth=R*.09;cx.lineCap='round';cx.beginPath();cx.arc(X,Y,R,Math.PI*.7,Math.PI*2.3);cx.stroke();cx.lineWidth=R*.04;cx.beginPath();cx.moveTo(X+Math.cos(Math.PI*.7)*R,Y+Math.sin(Math.PI*.7)*R);cx.lineTo(X+Math.cos(Math.PI*2.3)*R,Y+Math.sin(Math.PI*2.3)*R);cx.stroke();cx.lineWidth=R*.07;cx.beginPath();cx.moveTo(X-R*.88,Y);cx.lineTo(X+R*1.12,Y);cx.stroke();cx.fillStyle=c;cx.beginPath();cx.moveTo(X+R*1.12,Y);cx.lineTo(X+R*.84,Y-R*.18);cx.lineTo(X+R*.84,Y+R*.18);cx.closePath();cx.fill();cx.lineWidth=R*.05;cx.beginPath();cx.moveTo(X-R*.88,Y);cx.lineTo(X-R*1.12,Y-R*.26);cx.stroke();cx.beginPath();cx.moveTo(X-R*.88,Y);cx.lineTo(X-R*1.12,Y+R*.26);cx.stroke();cx.restore();}
+function drawChakra2(cx,X,Y,R,c){cx.save();for(let i=0;i<12;i++){cx.save();cx.translate(X,Y);cx.rotate(i/12*Math.PI*2);const g=cx.createLinearGradient(0,R*.28,0,R*.68);g.addColorStop(0,c);g.addColorStop(1,'rgba(201,168,76,0.18)');cx.fillStyle=g;cx.beginPath();cx.moveTo(-R*.1,R*.28);cx.lineTo(0,R*.68);cx.lineTo(R*.1,R*.28);cx.closePath();cx.fill();cx.restore();}cx.strokeStyle=c;cx.lineWidth=R*.07;cx.beginPath();cx.arc(X,Y,R*.52,0,Math.PI*2);cx.stroke();cx.lineWidth=R*.04;cx.beginPath();cx.arc(X,Y,R*.3,0,Math.PI*2);cx.stroke();cx.fillStyle=c;cx.beginPath();cx.arc(X,Y,R*.14,0,Math.PI*2);cx.fill();cx.restore();}
+function drawDiya2(cx,X,Y,R,c){cx.save();const fl=cx.createRadialGradient(X,Y-R*.35,R*.06,X,Y-R*.25,R*.4);fl.addColorStop(0,'rgba(255,220,50,.9)');fl.addColorStop(.5,'rgba(255,140,0,.45)');fl.addColorStop(1,'transparent');cx.fillStyle=fl;cx.beginPath();cx.arc(X,Y-R*.2,R*.55,0,Math.PI*2);cx.fill();cx.fillStyle='#FFF176';cx.beginPath();cx.moveTo(X,Y-R*1.0);cx.bezierCurveTo(X+R*.24,Y-R*.6,X+R*.18,Y-R*.22,X,Y-R*.12);cx.bezierCurveTo(X-R*.18,Y-R*.22,X-R*.24,Y-R*.6,X,Y-R*1.0);cx.fill();cx.fillStyle='#FF6B00';cx.beginPath();cx.moveTo(X,Y-R*.85);cx.bezierCurveTo(X+R*.1,Y-R*.55,X+R*.08,Y-R*.28,X,Y-R*.14);cx.bezierCurveTo(X-R*.08,Y-R*.28,X-R*.1,Y-R*.55,X,Y-R*.85);cx.fill();cx.fillStyle=c;cx.beginPath();cx.ellipse(X,Y+R*.16,R*.62,R*.26,0,0,Math.PI);cx.closePath();cx.fill();cx.beginPath();cx.ellipse(X,Y+R*.16,R*.62,R*.18,0,0,Math.PI*2);cx.fill();cx.restore();}
+function drawLotus2(cx,X,Y,R){cx.save();for(let i=0;i<8;i++){cx.save();cx.translate(X,Y);cx.rotate(i/8*Math.PI*2);cx.fillStyle=i%2===0?'#FF6B9D':'rgba(255,107,157,0.55)';cx.beginPath();cx.ellipse(0,-R*.72,R*.24,R*.46,0,0,Math.PI*2);cx.fill();cx.restore();}cx.fillStyle='#FFD700';cx.beginPath();cx.arc(X,Y,R*.26,0,Math.PI*2);cx.fill();cx.fillStyle=GOLD;cx.beginPath();cx.arc(X,Y,R*.17,0,Math.PI*2);cx.fill();cx.restore();}
+function drawTrishul2(cx,X,Y,R,c){cx.save();cx.fillStyle=c;cx.strokeStyle=c;cx.lineWidth=R*.07;cx.lineCap='round';cx.fillRect(X-R*.06,Y-R*.15,R*.12,R*1.12);cx.beginPath();cx.moveTo(X,Y-R*1.0);cx.lineTo(X-R*.14,Y-R*.15);cx.lineTo(X+R*.14,Y-R*.15);cx.closePath();cx.fill();cx.beginPath();cx.moveTo(X-R*.56,Y-R*.54);cx.bezierCurveTo(X-R*.64,Y-R*.88,X-R*.28,Y-R*.9,X-R*.28,Y-R*.54);cx.stroke();cx.beginPath();cx.moveTo(X+R*.56,Y-R*.54);cx.bezierCurveTo(X+R*.64,Y-R*.88,X+R*.28,Y-R*.9,X+R*.28,Y-R*.54);cx.stroke();cx.fillRect(X-R*.66,Y-R*.52,R*1.32,R*.1);cx.beginPath();cx.arc(X,Y+R*1.0,R*.18,0,Math.PI*2);cx.fill();cx.restore();}
 
-/* ══════ CONTROLS ══════ */
-function selFest(btn,key){festVal=key;document.querySelectorAll('.ftabs .ft').forEach(b=>b.classList.remove('on'));btn.classList.add('on');const f=FESTS[key];document.getElementById('tagPills').innerHTML=f.tags.map((t,i)=>`<button class="ap" onclick="pickTag(this,'${t.replace(/'/g,"\\'")}')">Tag ${i+1}</button>`).join('');render();buildWaMsg();}
-function selSize(btn,s){sizeVal=s;document.querySelectorAll('.sizetabs .stb').forEach(b=>b.classList.remove('on'));btn.classList.add('on');setSize();render();}
-function pickAddr(btn,v){document.getElementById('addr').value=v;document.querySelectorAll('.apills .ap').forEach(b=>b.classList.remove('on'));btn.classList.add('on');render();buildWaMsg();}
-function pickTag(btn,v){document.getElementById('tagline').value=v;document.querySelectorAll('#tagPills .ap').forEach(b=>b.classList.remove('on'));btn.classList.add('on');render();buildWaMsg();}
-function pickOffer(btn,v){document.getElementById('offerTxt').value=v;document.querySelectorAll('#offerPills .ap').forEach(b=>b.classList.remove('on'));btn.classList.add('on');render();buildWaMsg();}
-function pickName(btn,v){document.getElementById('shopName').value=v;document.querySelectorAll('#namePills .ap').forEach(b=>b.classList.remove('on'));btn.classList.add('on');render();buildWaMsg();}
+const WISH_STYLES=[
+  {name:'Royal Crimson',
+   draw:(cv,sender,tag)=>{
+     const cx=cv.getContext('2d'),W=cv.width,H=cv.height;cx.clearRect(0,0,W,H);
+     const bg=cx.createRadialGradient(W/2,H*.4,30,W/2,H/2,W*.85);bg.addColorStop(0,'#200008');bg.addColorStop(.55,'#0e0004');bg.addColorStop(1,'#1a0a00');cx.fillStyle=bg;cx.fillRect(0,0,W,H);
+     const ag=cx.createRadialGradient(W/2,H*.38,10,W/2,H*.38,W*.46);ag.addColorStop(0,'rgba(201,168,76,0.14)');ag.addColorStop(1,'transparent');cx.fillStyle=ag;cx.fillRect(0,0,W,H);
+     wMandala(cx,W/2,H/2,W*.44,.055);wBorders(cx,W,H);wCorners(cx,W,H);
+     cx.save();cx.font=`bold ${W*.07}px serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=GOLD;cx.shadowColor='rgba(201,168,76,0.95)';cx.shadowBlur=W*.035;cx.fillText('ॐ',W/2,H*.095);cx.restore();
+     wLine(cx,W/2,H*.145,W*.3);
+     cx.save();cx.font=`bold ${W*.1}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=GOLDL;cx.shadowColor='rgba(240,208,128,0.7)';cx.shadowBlur=W*.035;cx.fillText('श्री राम नवमी',W/2,H*.248);cx.restore();
+     cx.save();cx.font=`bold ${W*.056}px Cinzel,serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=SAFF;cx.shadowColor='rgba(255,107,0,0.8)';cx.shadowBlur=W*.025;cx.fillText('2 0 2 6',W/2,H*.325);cx.restore();
+     wLine(cx,W/2,H*.368,W*.38);
+     drawBow2(cx,W/2,H*.508,W*.2,GOLDL);
+     wLine(cx,W/2,H*.635,W*.38);
+     cx.save();cx.font=`${W*.04}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle='rgba(253,246,227,.9)';cx.fillText('जय श्री राम की हार्दिक शुभकामनाएं!',W/2,H*.71);cx.restore();
+     cx.save();cx.font=`${W*.028}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle='rgba(240,208,128,.62)';cx.fillText('सुख, समृद्धि और सौभाग्य की कामना',W/2,H*.765);cx.restore();
+     cx.save();cx.font=`${W*.024}px Inter,sans-serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle='rgba(240,208,128,.45)';cx.fillText('May Lord Ram bless you with peace & joy',W/2,H*.812);cx.restore();
+     wSender(cx,W,H*.848,sender,tag);wMark(cx,W,H);
+   }},
+  {name:'Midnight Royal',
+   draw:(cv,sender,tag)=>{
+     const cx=cv.getContext('2d'),W=cv.width,H=cv.height;cx.clearRect(0,0,W,H);
+     const bg=cx.createRadialGradient(W/2,H*.3,20,W/2,H/2,W*.9);bg.addColorStop(0,'#060022');bg.addColorStop(.6,'#030012');bg.addColorStop(1,'#09001c');cx.fillStyle=bg;cx.fillRect(0,0,W,H);
+     const ag=cx.createRadialGradient(W/2,H*.4,10,W/2,H*.4,W*.44);ag.addColorStop(0,'rgba(201,168,76,0.12)');ag.addColorStop(1,'transparent');cx.fillStyle=ag;cx.fillRect(0,0,W,H);
+     wMandala(cx,W/2,H/2,W*.44,.05);wBorders(cx,W,H);wCorners(cx,W,H);
+     for(let i=0;i<18;i++){const sx=22+Math.random()*(W-44),sy=22+Math.random()*(H*.55);cx.save();cx.fillStyle=`rgba(240,208,128,${.18+Math.random()*.38})`;cx.font=`${6+Math.random()*8}px serif`;cx.textAlign='center';cx.fillText('✦',sx,sy);cx.restore();}
+     cx.save();cx.font=`bold ${W*.065}px serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=GOLD;cx.shadowColor='rgba(201,168,76,0.95)';cx.shadowBlur=W*.03;cx.fillText('ॐ',W/2,H*.095);cx.restore();
+     wLine(cx,W/2,H*.14,W*.28);
+     cx.save();cx.font=`bold ${W*.098}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=GOLDP;cx.shadowColor='rgba(253,233,154,0.7)';cx.shadowBlur=W*.03;cx.fillText('राम नवमी',W/2,H*.235);cx.restore();
+     drawChakra2(cx,W/2,H*.455,W*.14,GOLDL);
+     cx.save();cx.font=`bold ${W*.056}px "Cinzel Decorative",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=SAFF;cx.shadowColor='rgba(255,107,0,0.7)';cx.shadowBlur=W*.02;cx.fillText('JAI SHREE RAM',W/2,H*.582);cx.restore();
+     cx.save();cx.font=`bold ${W*.04}px Cinzel,serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=GOLD;cx.fillText('✦  2 0 2 6  ✦',W/2,H*.635);cx.restore();
+     wLine(cx,W/2,H*.672,W*.4);
+     cx.save();cx.font=`${W*.036}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle='rgba(253,246,227,.9)';cx.fillText('राम नवमी 2026 की हार्दिक शुभकामनाएं',W/2,H*.732);cx.restore();
+     cx.save();cx.font=`${W*.026}px Inter,sans-serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle='rgba(240,208,128,.55)';cx.fillText('May Lord Ram bless you with peace & prosperity',W/2,H*.784);cx.restore();
+     wSender(cx,W,H*.824,sender,tag);wMark(cx,W,H);
+   }},
+  {name:'Golden Luxury',
+   draw:(cv,sender,tag)=>{
+     const cx=cv.getContext('2d'),W=cv.width,H=cv.height;cx.clearRect(0,0,W,H);
+     const bg=cx.createLinearGradient(0,0,W,H);bg.addColorStop(0,'#1c1100');bg.addColorStop(.4,'#0e0900');bg.addColorStop(.8,'#1c0b00');bg.addColorStop(1,'#0e0500');cx.fillStyle=bg;cx.fillRect(0,0,W,H);
+     const gc=cx.createRadialGradient(W/2,H/2,10,W/2,H/2,W*.52);gc.addColorStop(0,'rgba(201,168,76,0.18)');gc.addColorStop(.5,'rgba(201,168,76,0.06)');gc.addColorStop(1,'transparent');cx.fillStyle=gc;cx.fillRect(0,0,W,H);
+     wMandala(cx,W/2,H/2,W*.44,.08);
+     for(let i=0;i<3;i++){const off=4+i*6,lw=2-i*.5;cx.save();const bg2=cx.createLinearGradient(0,0,W,0);bg2.addColorStop(0,'rgba(201,168,76,.28)');bg2.addColorStop(.5,i===1?GOLDL:GOLD);bg2.addColorStop(1,'rgba(201,168,76,.28)');cx.strokeStyle=bg2;cx.lineWidth=lw;cx.strokeRect(off,off,W-2*off,H-2*off);cx.restore();}
+     wCorners(cx,W,H);
+     // Kalash top
+     SYMS[7].draw(cx,W/2,H*.13,W*.065,GOLDL);
+     cx.save();cx.font=`bold ${W*.094}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=GOLDL;cx.shadowColor='rgba(240,208,128,0.8)';cx.shadowBlur=W*.04;cx.fillText('श्री राम',W/2,H*.28);cx.restore();
+     cx.save();cx.font=`bold ${W*.085}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=GOLDP;cx.shadowColor='rgba(253,233,154,0.7)';cx.shadowBlur=W*.03;cx.fillText('नवमी २०२६',W/2,H*.375);cx.restore();
+     wLine(cx,W/2,H*.43,W*.38);
+     for(let d=-1;d<=1;d++)drawDiya2(cx,W/2+d*W*.2,H*.55,W*.056,GOLDL);
+     wLine(cx,W/2,H*.645,W*.38);
+     cx.save();cx.font=`${W*.04}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle='rgba(253,246,227,.92)';cx.fillText('जय श्री राम 🙏',W/2,H*.71);cx.restore();
+     cx.save();cx.font=`${W*.029}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle='rgba(240,208,128,.62)';cx.fillText('प्रभु राम आपके जीवन में सुख-समृद्धि लाएं',W/2,H*.765);cx.restore();
+     cx.save();cx.font=`${W*.024}px Inter,sans-serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle='rgba(240,208,128,.45)';cx.fillText('Ram Navami 2026 ki Hardik Shubhkamnayein!',W/2,H*.812);cx.restore();
+     wSender(cx,W,H*.848,sender,tag);wMark(cx,W,H);
+   }},
+  {name:'Saffron Dawn',
+   draw:(cv,sender,tag)=>{
+     const cx=cv.getContext('2d'),W=cv.width,H=cv.height;cx.clearRect(0,0,W,H);
+     const bg=cx.createRadialGradient(W/2,0,10,W/2,H*.5,W*.95);bg.addColorStop(0,'#1c0800');bg.addColorStop(.4,'#100400');bg.addColorStop(1,'#060000');cx.fillStyle=bg;cx.fillRect(0,0,W,H);
+     const sg=cx.createRadialGradient(W/2,H*.05,5,W/2,H*.05,W*.72);sg.addColorStop(0,'rgba(255,107,0,0.24)');sg.addColorStop(.4,'rgba(255,107,0,0.07)');sg.addColorStop(1,'transparent');cx.fillStyle=sg;cx.fillRect(0,0,W,H);
+     const ag=cx.createRadialGradient(W/2,H*.4,10,W/2,H*.4,W*.42);ag.addColorStop(0,'rgba(201,168,76,0.12)');ag.addColorStop(1,'transparent');cx.fillStyle=ag;cx.fillRect(0,0,W,H);
+     wMandala(cx,W/2,H/2,W*.44,.05);
+     cx.save();const b1=cx.createLinearGradient(0,0,W,0);b1.addColorStop(0,SAFF);b1.addColorStop(.3,GOLD);b1.addColorStop(.5,GOLDL);b1.addColorStop(.7,GOLD);b1.addColorStop(1,SAFF);cx.strokeStyle=b1;cx.lineWidth=5;cx.strokeRect(5,5,W-10,H-10);cx.restore();
+     cx.save();cx.strokeStyle='rgba(255,107,0,0.18)';cx.lineWidth=1;cx.strokeRect(18,18,W-36,H-36);cx.restore();wCorners(cx,W,H);
+     cx.save();cx.font=`bold ${W*.065}px "Cinzel Decorative",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=SAFF;cx.shadowColor='rgba(255,107,0,0.9)';cx.shadowBlur=W*.04;cx.fillText('JAI SHREE RAM',W/2,H*.118);cx.restore();
+     wLine(cx,W/2,H*.162,W*.44);
+     cx.save();cx.font=`bold ${W*.1}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=GOLDP;cx.shadowColor='rgba(253,233,154,.8)';cx.shadowBlur=W*.04;cx.fillText('राम नवमी',W/2,H*.268);cx.restore();
+     cx.save();cx.font=`bold ${W*.064}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=GOLDL;cx.shadowColor='rgba(240,208,128,.6)';cx.shadowBlur=W*.02;cx.fillText('की शुभकामनाएं',W/2,H*.352);cx.restore();
+     cx.save();cx.fillStyle='rgba(255,107,0,0.18)';cx.strokeStyle=SAFF;cx.lineWidth=1.5;cx.beginPath();cx.roundRect&&cx.roundRect(W/2-W*.11,H*.395,W*.22,H*.056,4)||cx.rect(W/2-W*.11,H*.395,W*.22,H*.056);cx.fill();cx.stroke();cx.font=`bold ${W*.035}px Cinzel,serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=SAFFL;cx.fillText('✦  2026  ✦',W/2,H*.423);cx.restore();
+     drawTrishul2(cx,W/2,H*.555,W*.13,GOLDL);
+     wLine(cx,W/2,H*.655,W*.4);
+     cx.save();cx.font=`${W*.04}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle='rgba(253,246,227,.9)';cx.fillText('हर घर में हो राम की कृपा',W/2,H*.715);cx.restore();
+     cx.save();cx.font=`${W*.027}px Inter,sans-serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle='rgba(240,208,128,.58)';cx.fillText('Wishing you joy, blessings & prosperity',W/2,H*.766);cx.restore();
+     cx.save();cx.font=`${W*.024}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle='rgba(240,208,128,.45)';cx.fillText('राम नवमी 2026 की हार्दिक शुभकामनाएं!',W/2,H*.812);cx.restore();
+     wSender(cx,W,H*.848,sender,tag);wMark(cx,W,H);
+   }},
+  {name:'Sacred Forest',
+   draw:(cv,sender,tag)=>{
+     const cx=cv.getContext('2d'),W=cv.width,H=cv.height;cx.clearRect(0,0,W,H);
+     const bg=cx.createLinearGradient(0,0,0,H);bg.addColorStop(0,'#001c00');bg.addColorStop(.5,'#000e00');bg.addColorStop(1,'#001606');cx.fillStyle=bg;cx.fillRect(0,0,W,H);
+     const ag=cx.createRadialGradient(W/2,H*.4,10,W/2,H*.4,W*.52);ag.addColorStop(0,'rgba(201,168,76,0.13)');ag.addColorStop(.5,'rgba(40,120,40,0.06)');ag.addColorStop(1,'transparent');cx.fillStyle=ag;cx.fillRect(0,0,W,H);
+     wMandala(cx,W/2,H/2,W*.44,.05);
+     cx.save();const b1=cx.createLinearGradient(0,0,W,H);b1.addColorStop(0,'#2E7D32');b1.addColorStop(.3,GOLD);b1.addColorStop(.5,GOLDL);b1.addColorStop(.7,GOLD);b1.addColorStop(1,'#2E7D32');cx.strokeStyle=b1;cx.lineWidth=5;cx.strokeRect(5,5,W-10,H-10);cx.restore();
+     cx.save();cx.strokeStyle='rgba(201,168,76,0.17)';cx.lineWidth=1;cx.strokeRect(18,18,W-36,H-36);cx.restore();wCorners(cx,W,H);
+     for(let i=-1;i<=1;i++)drawLotus2(cx,W/2+i*W*.26,H*.135,W*.056);
+     wLine(cx,W/2,H*.195,W*.44);
+     cx.save();cx.font=`bold ${W*.1}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=GOLDL;cx.shadowColor='rgba(240,208,128,0.8)';cx.shadowBlur=W*.035;cx.fillText('श्री राम नवमी',W/2,H*.293);cx.restore();
+     cx.save();cx.font=`bold ${W*.05}px Cinzel,serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle=SAFF;cx.shadowColor='rgba(255,107,0,0.7)';cx.shadowBlur=W*.02;cx.fillText('✦  2 0 2 6  ✦',W/2,H*.363);cx.restore();
+     SYMS[6].draw(cx,W/2-W*.18,H*.494,W*.09,GOLDL);
+     SYMS[7].draw(cx,W/2,H*.464,W*.1,GOLDL);
+     SYMS[6].draw(cx,W/2+W*.18,H*.494,W*.09,GOLDL);
+     wLine(cx,W/2,H*.595,W*.44);
+     cx.save();cx.font=`${W*.04}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle='rgba(253,246,227,.9)';cx.fillText('जय श्री राम 🙏',W/2,H*.655);cx.restore();
+     cx.save();cx.font=`${W*.03}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle='rgba(240,208,128,.62)';cx.fillText('मर्यादा पुरुषोत्तम श्री राम की जय!',W/2,H*.71);cx.restore();
+     cx.save();cx.font=`${W*.025}px Inter,sans-serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle='rgba(240,208,128,.48)';cx.fillText('Ram Navami 2026 ki hardik shubhkamnayein!',W/2,H*.758);cx.restore();
+     cx.save();cx.font=`${W*.025}px "Tiro Devanagari Hindi",serif`;cx.textAlign='center';cx.textBaseline='middle';cx.fillStyle='rgba(240,208,128,.45)';cx.fillText('ARC G15 Digital – Ambikapur, Sarguja',W/2,H*.806);cx.restore();
+     wSender(cx,W,H*.84,sender,tag);wMark(cx,W,H);
+   }},
+];
+
+function buildWishes(){
+  const grid=document.getElementById('wishGrid');grid.innerHTML='';
+  const sender=(document.getElementById('senderName')||{value:''}).value.trim();
+  const wishTag=(document.getElementById('wishTagline')||{value:''}).value.trim()||'जय श्री राम की हार्दिक शुभकामनाएं! 🙏';
+  WISH_STYLES.forEach((style,idx)=>{
+    const wrap=document.createElement('div');wrap.className='wish-card rv d'+(idx%3+1);
+    const cv=document.createElement('canvas');cv.width=600;cv.height=600;wrap.appendChild(cv);
+    const footer=document.createElement('div');footer.className='wish-card-footer';
+    const nm=document.createElement('div');nm.className='wish-style-name';nm.textContent=`Style ${idx+1} – ${style.name}`;
+    const actions=document.createElement('div');actions.className='wish-actions';
+    const dlBtn=document.createElement('button');dlBtn.className='w-dl-btn';dlBtn.textContent='⬇ Download';
+    dlBtn.onclick=()=>{const a=document.createElement('a');a.download=`RamNavami2026_${style.name.replace(/ /g,'_')}.png`;a.href=cv.toDataURL('image/png');a.click();toast('🎉 '+style.name+' downloaded!');};
+    const waBtn=document.createElement('button');waBtn.className='w-wa-btn';waBtn.innerHTML='📲 Share WA';
+    waBtn.onclick=()=>{const msg='🙏 Jai Shree Ram!\n\n'+wishTag+'\n\nराम नवमी 2026 की हार्दिक शुभकामनाएं! 🏹\n\nMay Lord Ram bless you with peace, joy & prosperity.\n\n— '+(sender||'ARC G15 Digital')+', Ambikapur, Sarguja 🚀';window.open('https://wa.me/?text='+encodeURIComponent(msg),'_blank');toast('📲 WA share ho raha hai!');};
+    actions.appendChild(dlBtn);actions.appendChild(waBtn);
+    footer.appendChild(nm);footer.appendChild(actions);
+    wrap.appendChild(footer);
+    grid.appendChild(wrap);
+    style.draw(cv,sender,wishTag);
+  });
+  setTimeout(initReveal,80);
+}
+function pickSender(btn,v){document.getElementById('senderName').value=v;btn.parentElement.querySelectorAll('.pill').forEach(b=>b.classList.remove('on'));btn.classList.add('on');rebuildWishes();}
+function pickWishTag(btn,v){document.getElementById('wishTagline').value=v;document.querySelectorAll('#wishTagPills .pill').forEach(b=>b.classList.remove('on'));btn.classList.add('on');rebuildWishes();}
+function rebuildWishes(){buildWishes();}
+
+/* ═══════════════════════════════════════════════
+   CONTROLS
+═══════════════════════════════════════════════ */
+function selFest(btn,key){festVal=key;document.querySelectorAll('.ftabs .ftab').forEach(b=>b.classList.remove('on'));btn.classList.add('on');document.getElementById('tagPills').innerHTML=FESTS[key].tags.map((t,i)=>`<button class="pill" onclick="pickPill(this,'tagline','${t.replace(/'/g,"\\'")}')">Tag ${i+1}</button>`).join('');render();buildWaMsg();}
+function selSize(btn,s){sizeVal=s;document.querySelectorAll('.sizetabs .stab').forEach(b=>b.classList.remove('on'));btn.classList.add('on');const sz=SIZES[s];W=sz.w;H=sz.h;CV.width=W;CV.height=H;render();}
+function pickField(btn,id,v){document.getElementById(id).value=v;btn.parentElement.querySelectorAll('.pill').forEach(b=>b.classList.remove('on'));btn.classList.add('on');render();buildWaMsg();}
+function pickPill(btn,id,v){document.getElementById(id).value=v;btn.parentElement.querySelectorAll('.pill').forEach(b=>b.classList.remove('on'));btn.classList.add('on');render();buildWaMsg();}
 
 function autoFill(){
   const biz=document.getElementById('bizType').value;if(!biz)return;
   const d=OFFERS[biz];
   if(!document.getElementById('offerTxt').value)document.getElementById('offerTxt').value=d.offers[0];
   if(!document.getElementById('tagline').value)document.getElementById('tagline').value=d.tags[0];
-  document.getElementById('namePills').innerHTML=d.names.map((n,i)=>`<button class="ap${i===0?' on':''}" onclick="pickName(this,'${n.replace(/'/g,"\\'")}')">📌 ${n}</button>`).join('');
-  document.getElementById('offerPills').innerHTML=d.offers.map((o,i)=>`<button class="ap${i===0?' on':''}" onclick="pickOffer(this,'${o.replace(/'/g,"\\'")}')">Option ${i+1}</button>`).join('');
-  document.getElementById('tagPills').innerHTML=d.tags.map((t,i)=>`<button class="ap${i===0?' on':''}" onclick="pickTag(this,'${t.replace(/'/g,"\\'")}')">Tag ${i+1}</button>`).join('');
-  // Update symbol to match business
-  symIdx=d.icon||0;
-  document.querySelectorAll('.sym-btn').forEach((b,i)=>{b.classList.toggle('on',i===symIdx);});
+  document.getElementById('namePills').innerHTML=d.names.map((n,i)=>`<button class="pill${i===0?' on':''}" onclick="pickPill(this,'shopName','${n.replace(/'/g,"\\'")}')">📌 ${n}</button>`).join('');
+  document.getElementById('offerPills').innerHTML=d.offers.map((o,i)=>`<button class="pill${i===0?' on':''}" onclick="pickPill(this,'offerTxt','${o.replace(/'/g,"\\'")}')">Option ${i+1}</button>`).join('');
+  document.getElementById('tagPills').innerHTML=d.tags.map((t,i)=>`<button class="pill${i===0?' on':''}" onclick="pickPill(this,'tagline','${t.replace(/'/g,"\\'")}')">Tag ${i+1}</button>`).join('');
+  symIdx=d.icon||0;document.querySelectorAll('.sym-btn').forEach((b,i)=>b.classList.toggle('on',i===symIdx));
   render();buildWaMsg();
 }
 
 function buildWaMsg(){
   const name=document.getElementById('shopName').value||'Aapka Shop';
-  const offer=document.getElementById('offerTxt').value||'Special Navami Offer!';
+  const offer=document.getElementById('offerTxt').value||'Special Ram Navami 2026 Offer!';
   const phone=document.getElementById('phone').value||'';
   const addr=document.getElementById('addr').value||'Ambikapur, Sarguja';
   const f=FESTS[festVal];
-  const msg=`🙏 Jai Shree Ram! ${f.hi} ki Hardik Shubhkamnayein! 🏹\n\n✨ *${name}* – ${f.badge}\n\n${offer}\n\n📍 ${addr}${phone?'\n📞 '+phone:''}\n\n✅ Hamse zaroor mileo – Limited time offer!\n\n🚀 Powered by ARC G15 Digital – Ambikapur`;
+  const msg=`🙏 Jai Shree Ram! ${f.hi} ki Hardik Shubhkamnayein! 🏹\n\n✨ *${name}* – ${f.badge}\n\n${offer}\n\n📍 ${addr}${phone?'\n📞 '+phone:''}\n\n✅ Limited time offer – Abhi mileo!\n\n🚀 Powered by ARC G15 Digital – Ambikapur, Sarguja`;
   document.getElementById('waMsgTxt').textContent=msg;
   document.getElementById('waMsgTxt').setAttribute('data-msg',msg);
 }
 function shareWA(){window.open('https://wa.me/?text='+encodeURIComponent(document.getElementById('waMsgTxt').getAttribute('data-msg')||''),'_blank');}
-function copyMsg(){
-  const msg=document.getElementById('waMsgTxt').getAttribute('data-msg')||'';
-  if(navigator.clipboard)navigator.clipboard.writeText(msg).then(()=>toast('✅ Message copied!'));
-  else{const ta=document.createElement('textarea');ta.value=msg;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);toast('✅ Message copied!');}
-}
+function copyMsg(){const msg=document.getElementById('waMsgTxt').getAttribute('data-msg')||'';if(navigator.clipboard)navigator.clipboard.writeText(msg).then(()=>toast('✅ Copied to clipboard!'));else{const ta=document.createElement('textarea');ta.value=msg;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);toast('✅ Copied!');}}
+
 function loadPosterBg(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{const i=new Image();i.onload=()=>{posterBg=i;render();toast('✅ Background loaded!');};i.src=ev.target.result;};r.readAsDataURL(f);}
 function clearPosterBg(){posterBg=null;document.getElementById('pbgFile').value='';render();toast('🗑️ Background cleared');}
 function loadLogo(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{const i=new Image();i.onload=()=>{logoImg=i;render();toast('✅ Logo loaded!');};i.src=ev.target.result;};r.readAsDataURL(f);}
 function clearLogo(){logoImg=null;document.getElementById('logoFile').value='';render();toast('🗑️ Logo cleared');}
 function loadHeroBg(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{const b=document.getElementById('heroBg');b.style.backgroundImage=`url('${ev.target.result}')`;b.style.backgroundSize='cover';b.style.backgroundPosition='center';toast('✅ Hero background loaded!');};r.readAsDataURL(f);}
 function clearHeroBg(){document.getElementById('heroBg').style.backgroundImage='none';document.getElementById('hbgFile').value='';}
-function downloadPoster(){render();const link=document.createElement('a');link.download=`RamNavami_${document.getElementById('shopName').value||'Poster'}_${Date.now()}.png`;link.href=CV.toDataURL('image/png');link.click();toast('🎉 Poster download ho raha hai!');}
+function downloadPoster(){render();const a=document.createElement('a');a.download=`RamNavami2026_${document.getElementById('shopName').value||'Poster'}.png`;a.href=CV.toDataURL('image/png');a.click();toast('🎉 Poster download ho raha hai!');}
 
-/* ══════ LISTINGS ══════ */
+/* ═══════════════════════════════════════════════
+   LISTINGS
+═══════════════════════════════════════════════ */
 const SHOPS=[
-  {n:"Pratham Jewellers",b:"💎 Jewellery",o:"Ram Navami Special – Navami pe khaas gold offers!",l:"Ambikapur, Sarguja",p:"8871824348",tag:"ARC G15 Client"},
-  {n:"Ambika Jewellers",b:"💎 Jewellery",o:"Making Charge FREE on all gold this Navami!",l:"Sadar Road, Ambikapur",p:"7697007000"},
+  {n:"Pratham Jewellers",b:"💎 Jewellery",o:"Ram Navami 2026 – Navami pe khaas gold offers!",l:"Ambikapur, Sarguja",p:"8871824348",tag:"ARC G15 Client"},
+  {n:"Ambika Jewellers",b:"💎 Jewellery",o:"Making Charge FREE on all gold – Navami 2026!",l:"Sadar Road, Ambikapur",p:"7697007000"},
   {n:"Shri Ram Sweets",b:"🍬 Mithai",o:"1 KG Mithai lao, 500g Prasad Pack FREE!",l:"Station Road, Ambikapur",p:"9876543210"},
-  {n:"Navrang Textiles",b:"👗 Clothing",o:"15% off on all Ethnic Wear & Sarees",l:"Civil Lines, Ambikapur",p:"9988776655"},
-  {n:"Pooja Puja Bhandar",b:"🛕 Puja Items",o:"Complete Navami Puja Kit – ₹199 only!",l:"Market Road, Ambikapur",p:"9871234567"},
-  {n:"Fresh Flowers Hub",b:"🌸 Flowers",o:"Navami Decoration Kit + Fresh Garlands!",l:"Gandhi Chowk, Ambikapur",p:"9812345678"},
-  {n:"Digital Print Zone",b:"🖨️ Printing",o:"50% Off on Banners & Posters this Navami!",l:"Hospital Road, Ambikapur",p:"9765432109"},
+  {n:"Navrang Textiles",b:"👗 Clothing",o:"15% off on Ethnic Wear & Sarees – 2026",l:"Civil Lines, Ambikapur",p:"9988776655"},
+  {n:"Pooja Puja Bhandar",b:"🛕 Puja Items",o:"Complete Navami 2026 Puja Kit – ₹199 only!",l:"Market Road, Ambikapur",p:"9871234567"},
+  {n:"Fresh Flowers Hub",b:"🌸 Flowers",o:"Navami 2026 Decoration Kit + Fresh Garlands!",l:"Gandhi Chowk, Ambikapur",p:"9812345678"},
+  {n:"Digital Print Zone",b:"🖨️ Printing",o:"50% Off on Banners & Posters – Navami 2026!",l:"Hospital Road, Ambikapur",p:"9765432109"},
 ];
 function renderListings(){
   document.getElementById('listGrid').innerHTML=SHOPS.map((s,i)=>`
-    <div class="sc rv d${(i%3)+1}">
-      ${s.tag?`<div style="position:absolute;top:10px;right:10px;background:rgba(255,107,0,.15);border:1px solid rgba(255,107,0,.3);color:var(--sl);font-size:8px;letter-spacing:1.5px;padding:2px 7px;border-radius:2px">${s.tag}</div>`:''}
-      <div class="sbadge">${s.b}</div><div class="sname">${s.n}</div>
-      <div class="soffer">${s.o}</div><div class="sloc">📍 ${s.l}</div>
-      <a class="wabtn" href="https://wa.me/91${s.p.replace(/^0+/,'')}?text=${encodeURIComponent('Hello '+s.n+'! Ram Navami offer ke baare mein jaanna tha 🙏')}" target="_blank">💬 WhatsApp Now</a>
+    <div class="shop-card rv d${(i%3)+1}">
+      ${s.tag?`<div style="position:absolute;top:12px;right:12px;background:rgba(255,107,0,.12);border:1px solid rgba(255,107,0,.28);color:var(--sl);font-size:8px;font-weight:700;letter-spacing:1.5px;padding:2px 8px;border-radius:50px">${s.tag}</div>`:''}
+      <div class="shop-badge">${s.b}</div><div class="shop-name">${s.n}</div>
+      <div class="shop-offer">${s.o}</div><div class="shop-loc">📍 ${s.l}</div>
+      <a class="wa-card-btn" href="https://wa.me/91${s.p.replace(/^0+/,'')}?text=${encodeURIComponent('Hello '+s.n+'! Ram Navami 2026 offer ke baare mein jaanna tha 🙏')}" target="_blank">💬 WhatsApp Now</a>
     </div>`).join('');
   setTimeout(initReveal,60);
 }
+
 function handleLead(){
   const n=document.getElementById('lName').value,b=document.getElementById('lBiz').value,p=document.getElementById('lPhone').value;
   if(!n||!b||!p){toast('⚠️ Naam, Business aur Phone zaroor bharo!');return;}
-  const msg=`🙏 Hello ARC G15 Digital!\n\nNaam: ${n}\nBusiness: ${b}\nPhone: ${p}\nAddress: ${document.getElementById('lAddr').value||'N/A'}\nOffer: ${document.getElementById('lOffer').value||'N/A'}\n\nPlease list my shop on Ram Navami Hub – Ambikapur! 🏹`;
-  window.open('https://wa.me/918871824348?text='+encodeURIComponent(msg),'_blank');
-  toast('✅ WhatsApp pe message ja raha hai...');
+  const msg=`🙏 Hello ARC G15 Digital!\n\nNaam: ${n}\nBusiness: ${b}\nPhone: ${p}\nAddress: ${document.getElementById('lAddr').value||'N/A'}\nOffer: ${document.getElementById('lOffer').value||'N/A'}\n\nRam Navami 2026 Hub pe mera shop list karo! 🏹`;
+  window.open('https://wa.me/918871824348?text='+encodeURIComponent(msg),'_blank');toast('✅ WhatsApp pe ja raha hai...');
 }
-function initReveal(){const ob=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on')}),{threshold:.08});document.querySelectorAll('.rv:not(.on)').forEach(el=>ob.observe(el));}
+
+function initReveal(){const ob=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on')}),{threshold:.07});document.querySelectorAll('.rv:not(.on)').forEach(el=>ob.observe(el));}
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3200);}
 
+/* ═══════════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════════ */
 document.addEventListener('DOMContentLoaded',()=>{
-  buildSymGrid();
-  buildThemeGrid();
-  setSize();
-  // Init festival taglines
-  document.getElementById('tagPills').innerHTML=FESTS.ramnavami.tags.map((t,i)=>`<button class="ap" onclick="pickTag(this,'${t.replace(/'/g,"\\'")}')">Tag ${i+1}</button>`).join('');
-  // Attach input listeners
-  ['shopName','offerTxt','tagline','phone','addr'].forEach(id=>{
-    document.getElementById(id).addEventListener('input',()=>{render();buildWaMsg();});
-  });
-  // Initial render after fonts
-  Promise.all([
-    document.fonts.load('bold 32px "Tiro Devanagari Hindi"'),
-    document.fonts.load('bold 20px Cinzel'),
-  ]).then(()=>{render();buildWaMsg();}).catch(()=>{render();buildWaMsg();});
-  renderListings();
-  initReveal();
-  // Viral WA
-  const vm='🙏 Jai Shree Ram! Ram Navami 2025 ki Hardik Shubhkamnayein! 🏹\n\n🛕 Ram Navami Special Offers – Ambikapur, Sarguja\n\n💎 Pratham Jewellers – Navami gold offers\n💎 Ambika Jewellers – Making charge FREE\n🍬 Shri Ram Sweets – Buy 1 Get 1 FREE\n👗 Navrang Textiles – 15% Off\n\n📍 Ambikapur, Sarguja | arcg15digital.in\n\n✨ Powered by ARC G15 Digital 🚀';
-  document.getElementById('waViralBtn').href='https://wa.me/?text='+encodeURIComponent(vm);
+  buildSymGrid();buildThemeGrid();
+  W=SIZES.portrait.w;H=SIZES.portrait.h;CV.width=W;CV.height=H;
+  document.getElementById('tagPills').innerHTML=FESTS.ramnavami.tags.map((t,i)=>`<button class="pill" onclick="pickPill(this,'tagline','${t.replace(/'/g,"\\'")}')">Tag ${i+1}</button>`).join('');
+  ['shopName','offerTxt','tagline','phone','addr'].forEach(id=>{document.getElementById(id).addEventListener('input',()=>{render();buildWaMsg();});});
+  const waViralMsg='🙏 Jai Shree Ram! Ram Navami 2026 ki Hardik Shubhkamnayein! 🏹\n\n🛕 Ram Navami 2026 Special Offers – Ambikapur, Sarguja\n\n💎 Pratham Jewellers – Navami gold offers\n💎 Ambika Jewellers – Making charge FREE\n🍬 Shri Ram Sweets – Buy 1 Get 1 FREE\n👗 Navrang Textiles – 15% Off\n🛕 Pooja Bhandar – Kit ₹199 only\n\n📍 Ambikapur, Sarguja CG | arcg15digital.in\n\n✨ Powered by ARC G15 Digital 🚀';
+  document.getElementById('waViralBtn').href='https://wa.me/?text='+encodeURIComponent(waViralMsg);
+  Promise.all([document.fonts.load('bold 48px "Tiro Devanagari Hindi"'),document.fonts.load('bold 28px Cinzel'),document.fonts.load('400 16px Inter')]).then(()=>{
+    // Set default wish tagline
+    const wt=document.getElementById('wishTagline');if(wt&&!wt.value)wt.value='जय श्री राम की हार्दिक शुभकामनाएं! 🙏';
+    render();buildWaMsg();buildWishes();}).catch(()=>{render();buildWaMsg();buildWishes();});
+  renderListings();initReveal();
 });
 </script>
 </body>
